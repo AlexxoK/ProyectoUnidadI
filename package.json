@@ -13,7 +13,7 @@
   "license": "ISC",
   "dependencies": {
     "argon2": "^0.41.1",
-    "bcryptjs": "^3.0.1",
+    "bcryptjs": "^3.0.2",
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
@@ -23,7 +23,8 @@
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.10.1",
     "morgan": "^1.10.0",
-    "multer": "^1.4.5-lts.1"
+    "multer": "^1.4.5-lts.1",
+    "proyectounidadi": "file:"
   },
   "type": "module",
   "devDependencies": {

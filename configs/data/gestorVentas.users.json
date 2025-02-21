@@ -9,7 +9,7 @@
   "password": "$argon2id$v=19$m=65536,t=3,p=4$XqRg3ku7Z+woO5y0RomTCQ$LOABCSNLxMBMYGkiPiYpvSiYucUR5PzHYP+4hejaguM",
   "phone": "12345678",
   "role": "CLIENT_ROLE",
-  "estado": false,
+  "estado": true,
   "google": false,
   "createdAt": {
     "$date": "2025-02-18T16:53:08.458Z"
@@ -51,7 +51,7 @@
   "password": "$argon2id$v=19$m=65536,t=3,p=4$m7UctAyNzdRGs/w35oyRlw$0/hL9uhShhPflVSEGQ8xO5rTosxe6z7Dr2dBxE2u18Y",
   "phone": "12345678",
   "role": "CLIENT_ROLE",
-  "estado": false,
+  "estado": true,
   "google": false,
   "createdAt": {
     "$date": "2025-02-18T16:56:36.583Z"

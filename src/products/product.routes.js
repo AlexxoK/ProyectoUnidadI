@@ -1,25 +1,36 @@
 import { Router } from "express";
 import { check } from "express-validator";
-import { getUsers, getUserById, updateUser, updatePassword, updateStatus, deleteUser } from "./user.controller.js";
-import { existeUsuarioById } from "../helpers/db-validator.js";
+import { saveProduct, getProducts, getProductById, updateProduct, deleteProduct } from "./product.controller.js";
+import { existeProductById } from "../helpers/db-validator.js";
 import { validarCampos } from "../middlewares/validar-campos.js";
 import { validarJWT } from "../middlewares/validar-jwt.js";
 import { tieneRole } from "../middlewares/validar-roles.js";
 
 const router = Router();
 
-router.get("/", getUsers);
+router.post(
+    "/",
+    [
+        validarJWT,
+        tieneRole("ADMIN_ROLE"),
+        check("id", "id invalid!").isMongoId(),
+        validarCampos
+    ],
+    saveProduct
+)
+
+router.get("/", getProducts);
 
 router.get(
-    "/findUser/:id",
+    "/findProduct/:id",
     [
         validarJWT,
         tieneRole("ADMIN_ROLE"),
         check("id", "id invalid!").isMongoId(),
-        check("id").custom(existeUsuarioById),
+        check("id").custom(existeProductById),
         validarCampos
     ],
-    getUserById
+    getProductById
 )
 
 router.put(
@@ -28,34 +39,10 @@ router.put(
         validarJWT,
         tieneRole("ADMIN_ROLE"),
         check("id", "id invalid!").isMongoId(),
-        check("id").custom(existeUsuarioById),
+        check("id").custom(existeProductById),
         validarCampos
     ],
-    updateUser
-)
-
-router.put(
-    "/:id",
-    [
-        validarJWT,
-        tieneRole("ADMIN_ROLE"),
-        check("id", "id invalid!").isMongoId(),
-        check("id").custom(existeUsuarioById),
-        validarCampos
-    ],
-    updatePassword
-)
-
-router.put(
-    "/:id",
-    [
-        validarJWT,
-        tieneRole("ADMIN_ROLE"),
-        check("id", "id invalid!").isMongoId(),
-        check("id").custom(existeUsuarioById),
-        validarCampos
-    ],
-    updateStatus
+    updateProduct
 )
 
 router.delete(
@@ -64,10 +51,10 @@ router.delete(
         validarJWT,
         tieneRole("ADMIN_ROLE"),
         check("id", "id invalid!").isMongoId(),
-        check("id").custom(existeUsuarioById),
+        check("id").custom(existeProductById),
         validarCampos
     ],
-    deleteUser
+    deleteProduct
 )
 
 export default router;

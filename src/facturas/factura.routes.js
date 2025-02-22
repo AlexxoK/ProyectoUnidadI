@@ -1,10 +1,10 @@
 import { Router } from "express";
 import { check } from "express-validator";
-import { saveCategory, getCategories, getCategoryById, deleteCategory, updateCategory } from "./category.controller.js";
+import { saveFactura, getFacturas, getFacturaById, updateFactura, updateEstadoFactura } from "./factura.controller.js";
 import { validarCampos } from "../middlewares/validar-campos.js";
 import { validarJWT } from "../middlewares/validar-jwt.js";
 import { tieneRole } from "../middlewares/validar-roles.js";
-import { existeCategoryById } from "../helpers/db-validator.js";
+import { existeFacturaById } from "../helpers/db-validator.js";
 
 const router = Router();
 
@@ -16,45 +16,45 @@ router.post(
         check("id", "id invalid!").isMongoId(),
         validarCampos
     ],
-    saveCategory
+    saveFactura
 )
 
-router.get("/", getCategories)
+router.get("/", getFacturas)
 
 router.get(
-    "/findCategory/:id",
+    "/findFactura/:id",
     [
         validarJWT,
         tieneRole("ADMIN_ROLE"),
         check("id", "id invalid!").isMongoId(),
-        check("id").custom(existeCategoryById),
+        check("id").custom(existeFacturaById),
         validarCampos
     ],
-    getCategoryById
+    getFacturaById
 )
 
 router.put(
-    "/:id",
+    "/updateFactura/:id",
     [
         validarJWT,
         tieneRole("ADMIN_ROLE"),
         check("id", "id invalid!").isMongoId(),
-        check("id").custom(existeCategoryById),
+        check("id").custom(existeFacturaById),
         validarCampos
     ],
-    updateCategory
+    updateFactura
 )
 
-router.delete(
-    "/:id",
+router.put(
+    "/updateEstadoFactura/:id",
     [
         validarJWT,
         tieneRole("ADMIN_ROLE"),
         check("id", "id invalid!").isMongoId(),
-        check("id").custom(existeCategoryById),
+        check("id").custom(existeFacturaById),
         validarCampos
     ],
-    deleteCategory
+    updateEstadoFactura
 )
 
 export default router;

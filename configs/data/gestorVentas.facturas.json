@@ -1,0 +1,76 @@
+[{
+  "_id": {
+    "$oid": "67ba161c12071eee98159410"
+  },
+  "user": {
+    "$oid": "67b4bb63d075ae5f0ab3d127"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "67b9d7ec03f7a5c05f8e6e78"
+      },
+      "quantity": 5,
+      "price": 10000,
+      "_id": {
+        "$oid": "67ba161c12071eee98159411"
+      }
+    },
+    {
+      "product": {
+        "$oid": "67b9d83c03f7a5c05f8e6e80"
+      },
+      "quantity": 5,
+      "price": 30000,
+      "_id": {
+        "$oid": "67ba161c12071eee98159412"
+      }
+    }
+  ],
+  "total": 200000,
+  "status": "Paid",
+  "createdAt": {
+    "$date": "2025-02-22T18:23:24.371Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-22T18:24:10.883Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67ba165912071eee9815942e"
+  },
+  "user": {
+    "$oid": "67b4bb63d075ae5f0ab3d127"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "67b9d7ec03f7a5c05f8e6e78"
+      },
+      "quantity": 1,
+      "price": 10000,
+      "_id": {
+        "$oid": "67ba165912071eee9815942f"
+      }
+    },
+    {
+      "product": {
+        "$oid": "67b9d83c03f7a5c05f8e6e80"
+      },
+      "quantity": 1,
+      "price": 30000,
+      "_id": {
+        "$oid": "67ba165912071eee98159430"
+      }
+    }
+  ],
+  "total": 40000,
+  "status": "Pending",
+  "createdAt": {
+    "$date": "2025-02-22T18:24:25.691Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-22T18:24:25.691Z"
+  }
+}]

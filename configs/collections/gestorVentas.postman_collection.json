@@ -558,12 +558,12 @@
 								"header": [
 									{
 										"key": "x-token",
-										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2I0YmI2M2QwNzVhZTVmMGFiM2QxMjciLCJpYXQiOjE3NDAyMzI2NzAsImV4cCI6MTc0MDIzNjI3MH0.Q4hWPdvWSLXfvCVAXj0I00ng-lvRK86s79T9ETlEQT4",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2I0YmI2M2QwNzVhZTVmMGFiM2QxMjciLCJpYXQiOjE3NDAyNDE0NDIsImV4cCI6MTc0MDI0NTA0Mn0.DCW_c15eMRIQxEPgOa7ZfANRoR6DinOu72RnteSYYW4",
 										"type": "text"
 									}
 								],
 								"url": {
-									"raw": "http://localhost:3002/gestorVentas/v1/categories/findCategory/67b9dc3408494961918a9645",
+									"raw": "http://localhost:3002/gestorVentas/v1/categories/findCategory/67b9dba608494961918a9636",
 									"protocol": "http",
 									"host": [
 										"localhost"
@@ -574,7 +574,7 @@
 										"v1",
 										"categories",
 										"findCategory",
-										"67b9dc3408494961918a9645"
+										"67b9dba608494961918a9636"
 									]
 								}
 							},
@@ -640,6 +640,184 @@
 										"v1",
 										"categories",
 										"67b9dca008494961918a9659"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "facturas",
+					"item": [
+						{
+							"name": "saveFactura",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2I0YmI2M2QwNzVhZTVmMGFiM2QxMjciLCJpYXQiOjE3NDAyNDU2MDcsImV4cCI6MTc0MDI0OTIwN30._v__WljhSWdE7iKw6qD6ocTf-QkcrqRLKBqvJGQ5utY",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"user\": \"67b4bb63d075ae5f0ab3d127\",\r\n  \"products\": [\r\n    {\r\n      \"product\": \"67b9d7ec03f7a5c05f8e6e78\",\r\n      \"quantity\": 1\r\n    },\r\n    {\r\n      \"product\": \"67b9d83c03f7a5c05f8e6e80\",\r\n      \"quantity\": 1\r\n    }\r\n  ]\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3002/gestorVentas/v1/facturas/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3002",
+									"path": [
+										"gestorVentas",
+										"v1",
+										"facturas",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getFacturas",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3002/gestorVentas/v1/facturas?limite=10&desde=0",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3002",
+									"path": [
+										"gestorVentas",
+										"v1",
+										"facturas"
+									],
+									"query": [
+										{
+											"key": "limite",
+											"value": "10"
+										},
+										{
+											"key": "desde",
+											"value": "0"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getFacturaById",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2I0YmI2M2QwNzVhZTVmMGFiM2QxMjciLCJpYXQiOjE3NDAyNDU2MDcsImV4cCI6MTc0MDI0OTIwN30._v__WljhSWdE7iKw6qD6ocTf-QkcrqRLKBqvJGQ5utY",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:3002/gestorVentas/v1/facturas/findFactura/67ba10d6e9dbf6d2c82c49ac",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3002",
+									"path": [
+										"gestorVentas",
+										"v1",
+										"facturas",
+										"findFactura",
+										"67ba10d6e9dbf6d2c82c49ac"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "putFactura",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "x-token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2I0YmI2M2QwNzVhZTVmMGFiM2QxMjciLCJpYXQiOjE3NDAyNDU2MDcsImV4cCI6MTc0MDI0OTIwN30._v__WljhSWdE7iKw6qD6ocTf-QkcrqRLKBqvJGQ5utY",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"products\": [\r\n    {\r\n      \"product\": \"67b9dcd008494961918a965f\",\r\n      \"quantity\": 1\r\n    },\r\n    {\r\n      \"product\": \"67b9d7ec03f7a5c05f8e6e78\",\r\n      \"quantity\": 1\r\n    }\r\n  ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3002/gestorVentas/v1/facturas/updateFactura/67ba12b0cf5280defb62bca5",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3002",
+									"path": [
+										"gestorVentas",
+										"v1",
+										"facturas",
+										"updateFactura",
+										"67ba12b0cf5280defb62bca5"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "putEstadoFactura",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "x-token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2I0YmI2M2QwNzVhZTVmMGFiM2QxMjciLCJpYXQiOjE3NDAyNDU2MDcsImV4cCI6MTc0MDI0OTIwN30._v__WljhSWdE7iKw6qD6ocTf-QkcrqRLKBqvJGQ5utY",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"status\": \"Paid\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3002/gestorVentas/v1/facturas/updateEstadoFactura/67ba161c12071eee98159410",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3002",
+									"path": [
+										"gestorVentas",
+										"v1",
+										"facturas",
+										"updateEstadoFactura",
+										"67ba161c12071eee98159410"
 									]
 								}
 							},

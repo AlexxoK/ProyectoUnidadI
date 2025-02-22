@@ -76,7 +76,7 @@ export const getCategories = async (req, res) => {
     }
 };
 
-export const searchCategory = async (req, res) => {
+export const getCategoryById = async (req, res) => {
     const { id } = req.params;
 
     try {

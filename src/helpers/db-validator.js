@@ -2,6 +2,7 @@ import Role from '../role/role.model.js';
 import User from '../users/user.model.js';
 import Product from "../products/product.model.js";
 import Category from '../categories/category.model.js';
+import Factura from '../facturas/factura.model.js';
 
 export const esRoleValido = async (role = ' ') => {
     const existeRol = await Role.findOne({ role });
@@ -39,6 +40,14 @@ export const existeCategoryById = async (id = '') => {
     const existeCategory = await Category.findById(id);
 
     if (!existeCategory) {
+        throw new Error(`id ${ id } dont exists!`);
+    }
+}
+
+export const existeFacturaById = async (id = '') => {
+    const existeFactura = await Factura.findById(id);
+
+    if (!existeFactura) {
         throw new Error(`id ${ id } dont exists!`);
     }
 }

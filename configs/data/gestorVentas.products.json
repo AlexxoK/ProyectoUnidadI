@@ -17,18 +17,17 @@
 },
 {
   "_id": {
-    "$oid": "67b7cb703c9dee43a05f12dd"
+    "$oid": "67b94b0263e6a8bc6c7391a0"
   },
   "type": "Electrónico",
   "name": "Computadora",
   "description": "Computadora Asus, ideal tanto para trabajos pesados como videojuegos.",
   "price": 8000,
-  "estado": false,
+  "estado": true,
   "createdAt": {
-    "$date": "2025-02-21T00:40:16.992Z"
+    "$date": "2025-02-22T03:56:50.354Z"
   },
   "updatedAt": {
-    "$date": "2025-02-21T00:45:12.792Z"
-  },
-  "__v": 0
+    "$date": "2025-02-22T03:56:50.354Z"
+  }
 }]

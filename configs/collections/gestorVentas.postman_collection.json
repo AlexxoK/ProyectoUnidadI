@@ -7,445 +7,616 @@
 	},
 	"item": [
 		{
-			"name": "users",
+			"name": "admin",
 			"item": [
 				{
-					"name": "register",
-					"request": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n  \"name\": \"Luis\",\r\n  \"surname\": \"Monzon\",\r\n  \"username\": \"MonzonK\",\r\n  \"email\": \"monzonk@gmail.com\",\r\n  \"password\": \"monzonk027\",\r\n  \"phone\": \"12345678\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "http://localhost:3002/gestorVentas/v1/auth/register",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "3002",
-							"path": [
-								"gestorVentas",
-								"v1",
-								"auth",
-								"register"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "login",
-					"request": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n  \"email\": \"alexxok@gmail.com\",\r\n  \"password\": \"alexxok027\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "http://localhost:3002/gestorVentas/v1/auth/login",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "3002",
-							"path": [
-								"gestorVentas",
-								"v1",
-								"auth",
-								"login"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "getUsers",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "http://localhost:3002/gestorVentas/v1/users?limite=10&desde=0",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "3002",
-							"path": [
-								"gestorVentas",
-								"v1",
-								"users"
-							],
-							"query": [
-								{
-									"key": "limite",
-									"value": "10"
+					"name": "users",
+					"item": [
+						{
+							"name": "register",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"Luis\",\r\n  \"surname\": \"Monzon\",\r\n  \"username\": \"MonzonK\",\r\n  \"email\": \"monzonk@gmail.com\",\r\n  \"password\": \"monzonk027\",\r\n  \"phone\": \"12345678\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
 								},
-								{
-									"key": "desde",
-									"value": "0"
+								"url": {
+									"raw": "http://localhost:3002/gestorVentas/v1/auth/register",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3002",
+									"path": [
+										"gestorVentas",
+										"v1",
+										"auth",
+										"register"
+									]
 								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "getUserById",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
+							},
+							"response": []
 						},
-						"url": {
-							"raw": "http://localhost:3002/gestorVentas/v1/users/findUser/67b4baf4d075ae5f0ab3d11c",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "3002",
-							"path": [
-								"gestorVentas",
-								"v1",
-								"users",
-								"findUser",
-								"67b4baf4d075ae5f0ab3d11c"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "putUser",
-					"request": {
-						"method": "PUT",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n  \"name\": \"Javier\",\n  \"surname\": \"Perez\",\n  \"username\": \"PerezK\",\n  \"email\": \"perezk@gmail.com\",\n  \"password\": \"perezk027\",\n  \"phone\": \"12345678\"\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "http://localhost:3002/gestorVentas/v1/users/67b4bbc4d075ae5f0ab3d12e",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "3002",
-							"path": [
-								"gestorVentas",
-								"v1",
-								"users",
-								"67b4bbc4d075ae5f0ab3d12e"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "putPassword",
-					"request": {
-						"method": "PUT",
-						"header": [
-							{
-								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2I0YmI2M2QwNzVhZTVmMGFiM2QxMjciLCJpYXQiOjE3NDAwMDQ4NDksImV4cCI6MTc0MDAwODQ0OX0.DxdNAf0nRZffHNMO7rvk0aMs4e2n6byv3qalY-LoUpg",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n  \"password\": \"alexxok027\"\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "http://localhost:3002/gestorVentas/v1/users/67b4bb63d075ae5f0ab3d127",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "3002",
-							"path": [
-								"gestorVentas",
-								"v1",
-								"users",
-								"67b4bb63d075ae5f0ab3d127"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "putStatus",
-					"request": {
-						"method": "PUT",
-						"header": [
-							{
-								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2I0YmI2M2QwNzVhZTVmMGFiM2QxMjciLCJpYXQiOjE3NDAwMDUwMjQsImV4cCI6MTc0MDAwODYyNH0.qFrkF24EYZ7BoXkLppFVa6uFC3fBdDSwaSoXghybaCs",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n  \"estado\": \"true\"\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "http://localhost:3002/gestorVentas/v1/users/67b4baf4d075ae5f0ab3d11c",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "3002",
-							"path": [
-								"gestorVentas",
-								"v1",
-								"users",
-								"67b4baf4d075ae5f0ab3d11c"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "deleteUser",
-					"request": {
-						"method": "DELETE",
-						"header": [
-							{
-								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2I0YmI2M2QwNzVhZTVmMGFiM2QxMjciLCJpYXQiOjE3Mzk4OTc5NzgsImV4cCI6MTczOTkwMTU3OH0.ZAXmCHnNeU6DZuKRc61DLl9ANhbbEqQavKXU4v9Q_CI"
-							}
-						],
-						"url": {
-							"raw": "http://localhost:3002/gestorVentas/v1/users/67b4bbc4d075ae5f0ab3d12e",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "3002",
-							"path": [
-								"gestorVentas",
-								"v1",
-								"users",
-								"67b4bbc4d075ae5f0ab3d12e"
-							]
-						}
-					},
-					"response": []
-				}
-			]
-		},
-		{
-			"name": "products",
-			"item": [
-				{
-					"name": "saveProduct",
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2I0YmI2M2QwNzVhZTVmMGFiM2QxMjciLCJpYXQiOjE3NDAwOTgyOTUsImV4cCI6MTc0MDEwMTg5NX0.SqXj4PlK6FD5tSJz-NNXUgpTYP1aYd8vn2pkBMAlao8",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"type\": \"Electrónico\",\r\n    \"name\": \"Computadora\",\r\n    \"description\": \"Computadora Asus, ideal tanto para trabajos pesados como videojuegos.\",\r\n    \"price\": 8000\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "http://localhost:3002/gestorVentas/v1/products/",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "3002",
-							"path": [
-								"gestorVentas",
-								"v1",
-								"products",
-								""
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "getProducts",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "http://localhost:3002/gestorVentas/v1/products?limite=10&desde=0",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "3002",
-							"path": [
-								"gestorVentas",
-								"v1",
-								"products"
-							],
-							"query": [
-								{
-									"key": "limite",
-									"value": "10"
+						{
+							"name": "login",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"email\": \"alexxok@gmail.com\",\r\n  \"password\": \"alexxok027\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
 								},
-								{
-									"key": "desde",
-									"value": "0"
+								"url": {
+									"raw": "http://localhost:3002/gestorVentas/v1/auth/login",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3002",
+									"path": [
+										"gestorVentas",
+										"v1",
+										"auth",
+										"login"
+									]
 								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "getProductById",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2I0YmI2M2QwNzVhZTVmMGFiM2QxMjciLCJpYXQiOjE3NDAwOTgyOTUsImV4cCI6MTc0MDEwMTg5NX0.SqXj4PlK6FD5tSJz-NNXUgpTYP1aYd8vn2pkBMAlao8",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
+							},
+							"response": []
 						},
-						"url": {
-							"raw": "http://localhost:3002/gestorVentas/v1/products/findProduct/67b7cb703c9dee43a05f12dd",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "3002",
-							"path": [
-								"gestorVentas",
-								"v1",
-								"products",
-								"findProduct",
-								"67b7cb703c9dee43a05f12dd"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "putProduct",
-					"request": {
-						"method": "PUT",
-						"header": [
-							{
-								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2I0YmI2M2QwNzVhZTVmMGFiM2QxMjciLCJpYXQiOjE3NDAwOTgyOTUsImV4cCI6MTc0MDEwMTg5NX0.SqXj4PlK6FD5tSJz-NNXUgpTYP1aYd8vn2pkBMAlao8",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n    \"type\": \"Electrónico\",\n    \"name\": \"Samsung A54\",\n    \"description\": \"Celular de gama alta.\",\n    \"price\": 5000\n}",
-							"options": {
-								"raw": {
-									"language": "json"
+						{
+							"name": "getUsers",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3002/gestorVentas/v1/users?limite=10&desde=0",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3002",
+									"path": [
+										"gestorVentas",
+										"v1",
+										"users"
+									],
+									"query": [
+										{
+											"key": "limite",
+											"value": "10"
+										},
+										{
+											"key": "desde",
+											"value": "0"
+										}
+									]
 								}
-							}
+							},
+							"response": []
 						},
-						"url": {
-							"raw": "http://localhost:3002/gestorVentas/v1/products/67b683d83c9dee43a05f12d1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "3002",
-							"path": [
-								"gestorVentas",
-								"v1",
-								"products",
-								"67b683d83c9dee43a05f12d1"
-							]
+						{
+							"name": "getUserById",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3002/gestorVentas/v1/users/findUser/67b4baf4d075ae5f0ab3d11c",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3002",
+									"path": [
+										"gestorVentas",
+										"v1",
+										"users",
+										"findUser",
+										"67b4baf4d075ae5f0ab3d11c"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "putUser",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"name\": \"Javier\",\n  \"surname\": \"Perez\",\n  \"username\": \"PerezK\",\n  \"email\": \"perezk@gmail.com\",\n  \"password\": \"perezk027\",\n  \"phone\": \"12345678\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3002/gestorVentas/v1/users/67b4bbc4d075ae5f0ab3d12e",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3002",
+									"path": [
+										"gestorVentas",
+										"v1",
+										"users",
+										"67b4bbc4d075ae5f0ab3d12e"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "putPassword",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "x-token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2I0YmI2M2QwNzVhZTVmMGFiM2QxMjciLCJpYXQiOjE3NDAwMDQ4NDksImV4cCI6MTc0MDAwODQ0OX0.DxdNAf0nRZffHNMO7rvk0aMs4e2n6byv3qalY-LoUpg",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"password\": \"alexxok027\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3002/gestorVentas/v1/users/67b4bb63d075ae5f0ab3d127",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3002",
+									"path": [
+										"gestorVentas",
+										"v1",
+										"users",
+										"67b4bb63d075ae5f0ab3d127"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "putStatus",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "x-token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2I0YmI2M2QwNzVhZTVmMGFiM2QxMjciLCJpYXQiOjE3NDAwMDUwMjQsImV4cCI6MTc0MDAwODYyNH0.qFrkF24EYZ7BoXkLppFVa6uFC3fBdDSwaSoXghybaCs",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"estado\": \"true\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3002/gestorVentas/v1/users/67b4baf4d075ae5f0ab3d11c",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3002",
+									"path": [
+										"gestorVentas",
+										"v1",
+										"users",
+										"67b4baf4d075ae5f0ab3d11c"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deleteUser",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "x-token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2I0YmI2M2QwNzVhZTVmMGFiM2QxMjciLCJpYXQiOjE3Mzk4OTc5NzgsImV4cCI6MTczOTkwMTU3OH0.ZAXmCHnNeU6DZuKRc61DLl9ANhbbEqQavKXU4v9Q_CI"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:3002/gestorVentas/v1/users/67b4bbc4d075ae5f0ab3d12e",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3002",
+									"path": [
+										"gestorVentas",
+										"v1",
+										"users",
+										"67b4bbc4d075ae5f0ab3d12e"
+									]
+								}
+							},
+							"response": []
 						}
-					},
-					"response": []
+					]
 				},
 				{
-					"name": "deleteProduct",
-					"request": {
-						"method": "DELETE",
-						"header": [
-							{
-								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2I0YmI2M2QwNzVhZTVmMGFiM2QxMjciLCJpYXQiOjE3NDAwOTgyOTUsImV4cCI6MTc0MDEwMTg5NX0.SqXj4PlK6FD5tSJz-NNXUgpTYP1aYd8vn2pkBMAlao8"
-							}
-						],
-						"url": {
-							"raw": "http://localhost:3002/gestorVentas/v1/products/67b7cb703c9dee43a05f12dd",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "3002",
-							"path": [
-								"gestorVentas",
-								"v1",
-								"products",
-								"67b7cb703c9dee43a05f12dd"
-							]
+					"name": "products",
+					"item": [
+						{
+							"name": "saveProduct",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2I0YmI2M2QwNzVhZTVmMGFiM2QxMjciLCJpYXQiOjE3NDAxOTY1NTMsImV4cCI6MTc0MDIwMDE1M30.NPbbiR0JzWkQrjlFuQCoC8NEzC_R_CrYZtko6-ApdNs",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"type\": \"Electrónico\",\r\n    \"name\": \"Computadora\",\r\n    \"description\": \"Computadora Asus, ideal tanto para trabajos pesados como videojuegos.\",\r\n    \"price\": 8000\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3002/gestorVentas/v1/products/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3002",
+									"path": [
+										"gestorVentas",
+										"v1",
+										"products",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getProducts",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3002/gestorVentas/v1/products?limite=10&desde=0",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3002",
+									"path": [
+										"gestorVentas",
+										"v1",
+										"products"
+									],
+									"query": [
+										{
+											"key": "limite",
+											"value": "10"
+										},
+										{
+											"key": "desde",
+											"value": "0"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getProductById",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2I0YmI2M2QwNzVhZTVmMGFiM2QxMjciLCJpYXQiOjE3NDAwOTgyOTUsImV4cCI6MTc0MDEwMTg5NX0.SqXj4PlK6FD5tSJz-NNXUgpTYP1aYd8vn2pkBMAlao8",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3002/gestorVentas/v1/products/findProduct/67b7cb703c9dee43a05f12dd",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3002",
+									"path": [
+										"gestorVentas",
+										"v1",
+										"products",
+										"findProduct",
+										"67b7cb703c9dee43a05f12dd"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "putProduct",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "x-token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2I0YmI2M2QwNzVhZTVmMGFiM2QxMjciLCJpYXQiOjE3NDAwOTgyOTUsImV4cCI6MTc0MDEwMTg5NX0.SqXj4PlK6FD5tSJz-NNXUgpTYP1aYd8vn2pkBMAlao8",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"type\": \"Electrónico\",\n    \"name\": \"Samsung A54\",\n    \"description\": \"Celular de gama alta.\",\n    \"price\": 5000\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3002/gestorVentas/v1/products/67b683d83c9dee43a05f12d1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3002",
+									"path": [
+										"gestorVentas",
+										"v1",
+										"products",
+										"67b683d83c9dee43a05f12d1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deleteProduct",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "x-token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2I0YmI2M2QwNzVhZTVmMGFiM2QxMjciLCJpYXQiOjE3NDAwOTgyOTUsImV4cCI6MTc0MDEwMTg5NX0.SqXj4PlK6FD5tSJz-NNXUgpTYP1aYd8vn2pkBMAlao8"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:3002/gestorVentas/v1/products/67b7cb703c9dee43a05f12dd",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3002",
+									"path": [
+										"gestorVentas",
+										"v1",
+										"products",
+										"67b7cb703c9dee43a05f12dd"
+									]
+								}
+							},
+							"response": []
 						}
-					},
-					"response": []
+					]
+				},
+				{
+					"name": "categories",
+					"item": [
+						{
+							"name": "saveCategory",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2I0YmI2M2QwNzVhZTVmMGFiM2QxMjciLCJpYXQiOjE3NDAxOTU2MjYsImV4cCI6MTc0MDE5OTIyNn0.cfoo73qFxkbVOAbjD6MiZBamw1pwf-YImF_J5TQKuEA"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"name\": \"Electrónicos\",\n  \"description\": \"Categoría para productos Electrónicos\",\n  \"productos\": [\"Computadora\"]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3002/gestorVentas/v1/categories/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3002",
+									"path": [
+										"gestorVentas",
+										"v1",
+										"categories",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getCategories",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3002/gestorVentas/v1/categories?limite=10&desde=0",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3002",
+									"path": [
+										"gestorVentas",
+										"v1",
+										"categories"
+									],
+									"query": [
+										{
+											"key": "limite",
+											"value": "10"
+										},
+										{
+											"key": "desde",
+											"value": "0"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "putCategory",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "x-token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2I0YmI2M2QwNzVhZTVmMGFiM2QxMjciLCJpYXQiOjE3NDAxOTY1NTMsImV4cCI6MTc0MDIwMDE1M30.NPbbiR0JzWkQrjlFuQCoC8NEzC_R_CrYZtko6-ApdNs",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"Electrónica\",\r\n  \"description\": \"Categoría de productos electrónicos\",\r\n  \"productos\": [\"Samsung A54\"]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3002/gestorVentas/v1/categories/67b948d5c7c51b4520926cd5",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3002",
+									"path": [
+										"gestorVentas",
+										"v1",
+										"categories",
+										"67b948d5c7c51b4520926cd5"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deleteCategory",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "x-token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2I0YmI2M2QwNzVhZTVmMGFiM2QxMjciLCJpYXQiOjE3NDAxOTc5NTAsImV4cCI6MTc0MDIwMTU1MH0.E0Dange7LFsixXIPdqUncEdPQ6_KjLA1NZZH5-f4_v8",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:3002/gestorVentas/v1/categories/67b948d5c7c51b4520926cd5",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3002",
+									"path": [
+										"gestorVentas",
+										"v1",
+										"categories",
+										"67b948d5c7c51b4520926cd5"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getCategoryById",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2I0YmI2M2QwNzVhZTVmMGFiM2QxMjciLCJpYXQiOjE3NDAxOTk2MDQsImV4cCI6MTc0MDIwMzIwNH0._m4Sw0ksqBTI-g70YtwV7ehcA07lh1GXwp-bZdaOacY",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:3002/gestorVentas/v1/categories/findCategory/67b95408c622fd3e1ca5a643",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3002",
+									"path": [
+										"gestorVentas",
+										"v1",
+										"categories",
+										"findCategory",
+										"67b95408c622fd3e1ca5a643"
+									]
+								}
+							},
+							"response": []
+						}
+					]
 				}
 			]
 		}

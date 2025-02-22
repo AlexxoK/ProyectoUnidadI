@@ -46,7 +46,19 @@ router.put(
 )
 
 router.delete(
-    "/:id",
+    "/sell/:id",
+    [
+        validarJWT,
+        tieneRole("ADMIN_ROLE"),
+        check("id", "id invalid!").isMongoId(),
+        check("id").custom(existeProductById),
+        validarCampos
+    ],
+    deleteProduct
+)
+
+router.delete(
+    "/delete/:id",
     [
         validarJWT,
         tieneRole("ADMIN_ROLE"),

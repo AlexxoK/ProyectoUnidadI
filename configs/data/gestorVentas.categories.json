@@ -1,57 +1,88 @@
 [{
   "_id": {
-    "$oid": "67b948d5c7c51b4520926cd5"
-  },
-  "name": "Electrónica",
-  "description": "Categoría de productos electrónicos",
-  "productos": [
-    {
-      "$oid": "67b683d83c9dee43a05f12d1"
-    }
-  ],
-  "status": false,
-  "createdAt": {
-    "$date": "2025-02-22T03:47:33.029Z"
-  },
-  "updatedAt": {
-    "$date": "2025-02-22T04:20:11.747Z"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b94fcbc622fd3e1ca5a629"
-  },
-  "name": "Sin Categoría",
-  "description": "Categoría para productos sin clasificación",
-  "productos": [
-    {
-      "$oid": "67b683d83c9dee43a05f12d1"
-    }
-  ],
-  "status": true,
-  "createdAt": {
-    "$date": "2025-02-22T04:17:15.937Z"
-  },
-  "updatedAt": {
-    "$date": "2025-02-22T04:20:11.735Z"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b95408c622fd3e1ca5a643"
+    "$oid": "67b9dba608494961918a9636"
   },
   "name": "Electrónicos",
   "description": "Categoría para productos Electrónicos",
   "productos": [
     {
-      "$oid": "67b94b0263e6a8bc6c7391a0"
+      "$oid": "67b9d7ec03f7a5c05f8e6e78"
+    },
+    {
+      "$oid": "67b9d83c03f7a5c05f8e6e80"
     }
   ],
   "status": true,
   "createdAt": {
-    "$date": "2025-02-22T04:35:20.645Z"
+    "$date": "2025-02-22T14:13:58.626Z"
   },
   "updatedAt": {
-    "$date": "2025-02-22T04:35:20.645Z"
+    "$date": "2025-02-22T14:13:58.626Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67b9dc3408494961918a9645"
+  },
+  "name": "Alimentos",
+  "description": "Categoría de productos alimenticios",
+  "productos": [
+    {
+      "$oid": "67b9dcd008494961918a965f"
+    },
+    {
+      "$oid": "67b9dce108494961918a9662"
+    }
+  ],
+  "status": true,
+  "createdAt": {
+    "$date": "2025-02-22T14:16:20.464Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-22T14:19:33.910Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67b9dca008494961918a9659"
+  },
+  "name": "Electrodomésticos",
+  "description": "Categoría para productos del hogar",
+  "productos": [
+    {
+      "$oid": "67b9dbe908494961918a963c"
+    },
+    {
+      "$oid": "67b9dc0608494961918a963f"
+    }
+  ],
+  "status": false,
+  "createdAt": {
+    "$date": "2025-02-22T14:18:08.774Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-22T14:21:10.480Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67b9dd5608494961918a9675"
+  },
+  "name": "Sin Categoría",
+  "description": "Categoría para productos sin clasificación",
+  "productos": [
+    {
+      "$oid": "67b9dbe908494961918a963c"
+    },
+    {
+      "$oid": "67b9dc0608494961918a963f"
+    }
+  ],
+  "status": true,
+  "createdAt": {
+    "$date": "2025-02-22T14:21:10.475Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-22T14:21:10.477Z"
   }
 }]

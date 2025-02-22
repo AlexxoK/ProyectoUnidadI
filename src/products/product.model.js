@@ -1,9 +1,9 @@
 import { Schema, model } from "mongoose";
 
 const ProductSchema = Schema({
-    type: {
+    object: {
         type: String,
-        required: [true, "Type is required!"],
+        required: [true, "Object is required!"],
     },
 
     name: {
@@ -24,6 +24,22 @@ const ProductSchema = Schema({
         min: [0, "Price must be a positive number!"]
     },
 
+    stock: {
+        type: Number,
+        required: [true, "Stock is required!"],
+        min: [0, "Stock cannot be negative!"]
+    },
+
+    sold: {
+        type: Number,
+        default: 0
+    },
+
+    outOfStock: {
+        type: Boolean,
+        default: false
+    },
+
     estado: {
         type: Boolean,
         default: true,
@@ -32,6 +48,12 @@ const ProductSchema = Schema({
     {
         timestamps: true,
         versionKey: false
-    });
+    }
+);
+
+ProductSchema.pre('save', function (next) {
+    this.outOfStock = this.stock <= 0;
+    next();
+});
 
 export default model('Product', ProductSchema);

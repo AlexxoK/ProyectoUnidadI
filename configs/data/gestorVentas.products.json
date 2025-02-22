@@ -1,33 +1,114 @@
 [{
   "_id": {
-    "$oid": "67b683d83c9dee43a05f12d1"
+    "$oid": "67b9d7ec03f7a5c05f8e6e78"
   },
-  "type": "Electrónico",
-  "name": "Samsung A54",
-  "description": "Celular de gama alta.",
-  "price": 5000,
+  "object": "Teléfono",
+  "name": "iPhone16",
+  "description": "Teléfono de gama alta.",
+  "price": 10000,
+  "stock": 50,
+  "sold": 0,
+  "outOfStock": false,
   "estado": true,
   "createdAt": {
-    "$date": "2025-02-20T01:22:32.494Z"
+    "$date": "2025-02-22T13:58:04.709Z"
   },
   "updatedAt": {
-    "$date": "2025-02-21T00:42:32.617Z"
-  },
-  "__v": 0
+    "$date": "2025-02-22T13:58:04.709Z"
+  }
 },
 {
   "_id": {
-    "$oid": "67b94b0263e6a8bc6c7391a0"
+    "$oid": "67b9d83c03f7a5c05f8e6e80"
   },
-  "type": "Electrónico",
-  "name": "Computadora",
-  "description": "Computadora Asus, ideal tanto para trabajos pesados como videojuegos.",
-  "price": 8000,
+  "object": "Televisor",
+  "name": "Samsung",
+  "description": "Televisor de gama alta.",
+  "price": 30000,
+  "stock": 48,
+  "sold": 7,
+  "outOfStock": false,
   "estado": true,
   "createdAt": {
-    "$date": "2025-02-22T03:56:50.354Z"
+    "$date": "2025-02-22T13:59:24.402Z"
   },
   "updatedAt": {
-    "$date": "2025-02-22T03:56:50.354Z"
+    "$date": "2025-02-22T14:08:22.241Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67b9dbe908494961918a963c"
+  },
+  "object": "Cocina",
+  "name": "Licuadora",
+  "description": "Licuadora para vatir alimentos.",
+  "price": 3000,
+  "stock": 50,
+  "sold": 0,
+  "outOfStock": false,
+  "estado": true,
+  "createdAt": {
+    "$date": "2025-02-22T14:15:05.171Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-22T14:15:05.171Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67b9dc0608494961918a963f"
+  },
+  "object": "Cocina",
+  "name": "Sartenes",
+  "description": "Juego de sartenes.",
+  "price": 1000,
+  "stock": 50,
+  "sold": 0,
+  "outOfStock": false,
+  "estado": true,
+  "createdAt": {
+    "$date": "2025-02-22T14:15:34.124Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-22T14:15:34.124Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67b9dcd008494961918a965f"
+  },
+  "object": "Fruta",
+  "name": "Manzana",
+  "description": "Fruta energética.",
+  "price": 5,
+  "stock": 50,
+  "sold": 0,
+  "outOfStock": false,
+  "estado": true,
+  "createdAt": {
+    "$date": "2025-02-22T14:18:56.617Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-22T14:18:56.617Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67b9dce108494961918a9662"
+  },
+  "object": "Verdura",
+  "name": "Trigo",
+  "description": "Fuente de la vida.",
+  "price": 5,
+  "stock": 50,
+  "sold": 0,
+  "outOfStock": false,
+  "estado": true,
+  "createdAt": {
+    "$date": "2025-02-22T14:19:13.429Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-22T14:19:13.429Z"
   }
 }]

@@ -284,13 +284,13 @@
 								"header": [
 									{
 										"key": "x-token",
-										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2I0YmI2M2QwNzVhZTVmMGFiM2QxMjciLCJpYXQiOjE3NDAxOTY1NTMsImV4cCI6MTc0MDIwMDE1M30.NPbbiR0JzWkQrjlFuQCoC8NEzC_R_CrYZtko6-ApdNs",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2I0YmI2M2QwNzVhZTVmMGFiM2QxMjciLCJpYXQiOjE3NDAyMzI2NzAsImV4cCI6MTc0MDIzNjI3MH0.Q4hWPdvWSLXfvCVAXj0I00ng-lvRK86s79T9ETlEQT4",
 										"type": "text"
 									}
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"type\": \"Electrónico\",\r\n    \"name\": \"Computadora\",\r\n    \"description\": \"Computadora Asus, ideal tanto para trabajos pesados como videojuegos.\",\r\n    \"price\": 8000\r\n}",
+									"raw": "{\r\n  \"object\": \"Verdura\",\r\n  \"name\": \"Trigo\",\r\n  \"description\": \"Fuente de la vida.\",\r\n  \"price\": 5,\r\n  \"stock\": 50\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -355,7 +355,7 @@
 								"header": [
 									{
 										"key": "x-token",
-										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2I0YmI2M2QwNzVhZTVmMGFiM2QxMjciLCJpYXQiOjE3NDAwOTgyOTUsImV4cCI6MTc0MDEwMTg5NX0.SqXj4PlK6FD5tSJz-NNXUgpTYP1aYd8vn2pkBMAlao8",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2I0YmI2M2QwNzVhZTVmMGFiM2QxMjciLCJpYXQiOjE3NDAyMzI2NzAsImV4cCI6MTc0MDIzNjI3MH0.Q4hWPdvWSLXfvCVAXj0I00ng-lvRK86s79T9ETlEQT4",
 										"type": "text"
 									}
 								],
@@ -369,7 +369,7 @@
 									}
 								},
 								"url": {
-									"raw": "http://localhost:3002/gestorVentas/v1/products/findProduct/67b7cb703c9dee43a05f12dd",
+									"raw": "http://localhost:3002/gestorVentas/v1/products/findProduct/67b9d83c03f7a5c05f8e6e80",
 									"protocol": "http",
 									"host": [
 										"localhost"
@@ -380,7 +380,7 @@
 										"v1",
 										"products",
 										"findProduct",
-										"67b7cb703c9dee43a05f12dd"
+										"67b9d83c03f7a5c05f8e6e80"
 									]
 								}
 							},
@@ -393,13 +393,13 @@
 								"header": [
 									{
 										"key": "x-token",
-										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2I0YmI2M2QwNzVhZTVmMGFiM2QxMjciLCJpYXQiOjE3NDAwOTgyOTUsImV4cCI6MTc0MDEwMTg5NX0.SqXj4PlK6FD5tSJz-NNXUgpTYP1aYd8vn2pkBMAlao8",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2I0YmI2M2QwNzVhZTVmMGFiM2QxMjciLCJpYXQiOjE3NDAyMzI2NzAsImV4cCI6MTc0MDIzNjI3MH0.Q4hWPdvWSLXfvCVAXj0I00ng-lvRK86s79T9ETlEQT4",
 										"type": "text"
 									}
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"type\": \"Electrónico\",\n    \"name\": \"Samsung A54\",\n    \"description\": \"Celular de gama alta.\",\n    \"price\": 5000\n}",
+									"raw": "{\n  \"object\": \"Televisor\",\n  \"name\": \"Samsung\",\n  \"description\": \"Televisor de gama alta.\",\n  \"price\": 30000,\n  \"stock\": 50\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -407,7 +407,7 @@
 									}
 								},
 								"url": {
-									"raw": "http://localhost:3002/gestorVentas/v1/products/67b683d83c9dee43a05f12d1",
+									"raw": "http://localhost:3002/gestorVentas/v1/products/67b9d83c03f7a5c05f8e6e80",
 									"protocol": "http",
 									"host": [
 										"localhost"
@@ -417,7 +417,7 @@
 										"gestorVentas",
 										"v1",
 										"products",
-										"67b683d83c9dee43a05f12d1"
+										"67b9d83c03f7a5c05f8e6e80"
 									]
 								}
 							},
@@ -430,11 +430,11 @@
 								"header": [
 									{
 										"key": "x-token",
-										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2I0YmI2M2QwNzVhZTVmMGFiM2QxMjciLCJpYXQiOjE3NDAwOTgyOTUsImV4cCI6MTc0MDEwMTg5NX0.SqXj4PlK6FD5tSJz-NNXUgpTYP1aYd8vn2pkBMAlao8"
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2I0YmI2M2QwNzVhZTVmMGFiM2QxMjciLCJpYXQiOjE3NDAyMzI2NzAsImV4cCI6MTc0MDIzNjI3MH0.Q4hWPdvWSLXfvCVAXj0I00ng-lvRK86s79T9ETlEQT4"
 									}
 								],
 								"url": {
-									"raw": "http://localhost:3002/gestorVentas/v1/products/67b7cb703c9dee43a05f12dd",
+									"raw": "http://localhost:3002/gestorVentas/v1/products/delete/67b9d83c03f7a5c05f8e6e80",
 									"protocol": "http",
 									"host": [
 										"localhost"
@@ -444,7 +444,36 @@
 										"gestorVentas",
 										"v1",
 										"products",
-										"67b7cb703c9dee43a05f12dd"
+										"delete",
+										"67b9d83c03f7a5c05f8e6e80"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "sellProduct",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "x-token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2I0YmI2M2QwNzVhZTVmMGFiM2QxMjciLCJpYXQiOjE3NDAyMzI2NzAsImV4cCI6MTc0MDIzNjI3MH0.Q4hWPdvWSLXfvCVAXj0I00ng-lvRK86s79T9ETlEQT4"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:3002/gestorVentas/v1/products/sell/67b9d83c03f7a5c05f8e6e80",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3002",
+									"path": [
+										"gestorVentas",
+										"v1",
+										"products",
+										"sell",
+										"67b9d83c03f7a5c05f8e6e80"
 									]
 								}
 							},
@@ -462,12 +491,12 @@
 								"header": [
 									{
 										"key": "x-token",
-										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2I0YmI2M2QwNzVhZTVmMGFiM2QxMjciLCJpYXQiOjE3NDAxOTU2MjYsImV4cCI6MTc0MDE5OTIyNn0.cfoo73qFxkbVOAbjD6MiZBamw1pwf-YImF_J5TQKuEA"
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2I0YmI2M2QwNzVhZTVmMGFiM2QxMjciLCJpYXQiOjE3NDAyMzI2NzAsImV4cCI6MTc0MDIzNjI3MH0.Q4hWPdvWSLXfvCVAXj0I00ng-lvRK86s79T9ETlEQT4"
 									}
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"name\": \"Electrónicos\",\n  \"description\": \"Categoría para productos Electrónicos\",\n  \"productos\": [\"Computadora\"]\n}",
+									"raw": "{\n  \"name\": \"Electrodomésticos\",\n  \"description\": \"Categoría para productos del hogar\",\n  \"productos\": [\"Licuadora\", \"Sartenes\"]\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -523,27 +552,18 @@
 							"response": []
 						},
 						{
-							"name": "putCategory",
+							"name": "getCategoryById",
 							"request": {
-								"method": "PUT",
+								"method": "GET",
 								"header": [
 									{
 										"key": "x-token",
-										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2I0YmI2M2QwNzVhZTVmMGFiM2QxMjciLCJpYXQiOjE3NDAxOTY1NTMsImV4cCI6MTc0MDIwMDE1M30.NPbbiR0JzWkQrjlFuQCoC8NEzC_R_CrYZtko6-ApdNs",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2I0YmI2M2QwNzVhZTVmMGFiM2QxMjciLCJpYXQiOjE3NDAyMzI2NzAsImV4cCI6MTc0MDIzNjI3MH0.Q4hWPdvWSLXfvCVAXj0I00ng-lvRK86s79T9ETlEQT4",
 										"type": "text"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": "{\r\n  \"name\": \"Electrónica\",\r\n  \"description\": \"Categoría de productos electrónicos\",\r\n  \"productos\": [\"Samsung A54\"]\r\n}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
 								"url": {
-									"raw": "http://localhost:3002/gestorVentas/v1/categories/67b948d5c7c51b4520926cd5",
+									"raw": "http://localhost:3002/gestorVentas/v1/categories/findCategory/67b9dc3408494961918a9645",
 									"protocol": "http",
 									"host": [
 										"localhost"
@@ -553,7 +573,45 @@
 										"gestorVentas",
 										"v1",
 										"categories",
-										"67b948d5c7c51b4520926cd5"
+										"findCategory",
+										"67b9dc3408494961918a9645"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "putCategory",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "x-token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2I0YmI2M2QwNzVhZTVmMGFiM2QxMjciLCJpYXQiOjE3NDAyMzI2NzAsImV4cCI6MTc0MDIzNjI3MH0.Q4hWPdvWSLXfvCVAXj0I00ng-lvRK86s79T9ETlEQT4",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"Alimentos\",\r\n  \"description\": \"Categoría de productos alimenticios\",\r\n  \"productos\": [\"Trigo\", \"Manzana\"]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3002/gestorVentas/v1/categories/67b9dc3408494961918a9645",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3002",
+									"path": [
+										"gestorVentas",
+										"v1",
+										"categories",
+										"67b9dc3408494961918a9645"
 									]
 								}
 							},
@@ -566,12 +624,12 @@
 								"header": [
 									{
 										"key": "x-token",
-										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2I0YmI2M2QwNzVhZTVmMGFiM2QxMjciLCJpYXQiOjE3NDAxOTc5NTAsImV4cCI6MTc0MDIwMTU1MH0.E0Dange7LFsixXIPdqUncEdPQ6_KjLA1NZZH5-f4_v8",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2I0YmI2M2QwNzVhZTVmMGFiM2QxMjciLCJpYXQiOjE3NDAyMzI2NzAsImV4cCI6MTc0MDIzNjI3MH0.Q4hWPdvWSLXfvCVAXj0I00ng-lvRK86s79T9ETlEQT4",
 										"type": "text"
 									}
 								],
 								"url": {
-									"raw": "http://localhost:3002/gestorVentas/v1/categories/67b948d5c7c51b4520926cd5",
+									"raw": "http://localhost:3002/gestorVentas/v1/categories/67b9dca008494961918a9659",
 									"protocol": "http",
 									"host": [
 										"localhost"
@@ -581,36 +639,7 @@
 										"gestorVentas",
 										"v1",
 										"categories",
-										"67b948d5c7c51b4520926cd5"
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "getCategoryById",
-							"request": {
-								"method": "GET",
-								"header": [
-									{
-										"key": "x-token",
-										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2I0YmI2M2QwNzVhZTVmMGFiM2QxMjciLCJpYXQiOjE3NDAxOTk2MDQsImV4cCI6MTc0MDIwMzIwNH0._m4Sw0ksqBTI-g70YtwV7ehcA07lh1GXwp-bZdaOacY",
-										"type": "text"
-									}
-								],
-								"url": {
-									"raw": "http://localhost:3002/gestorVentas/v1/categories/findCategory/67b95408c622fd3e1ca5a643",
-									"protocol": "http",
-									"host": [
-										"localhost"
-									],
-									"port": "3002",
-									"path": [
-										"gestorVentas",
-										"v1",
-										"categories",
-										"findCategory",
-										"67b95408c622fd3e1ca5a643"
+										"67b9dca008494961918a9659"
 									]
 								}
 							},

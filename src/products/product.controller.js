@@ -102,22 +102,63 @@ export const updateProduct = async (req, res = response) => {
 
 export const deleteProduct = async (req, res) => {
     try {
-
         const { id } = req.params;
+        const route = req.originalUrl;
 
-        const product = await Product.findByIdAndUpdate(id, { estado: false }, { new: true });
+        if (route.includes('/sell')) {
+            const product = await Product.findById(id);
 
-        res.status(200).json({
-            success: true,
-            message: 'Product delete success!',
-            product
-        })
-        
+            if (!product || !product.estado) {
+                return res.status(404).json({
+                    success: false,
+                    message: 'Product not found or inactive!'
+                });
+            }
+
+            if (product.stock <= 0) {
+                return res.status(400).json({
+                    success: false,
+                    message: 'Product is out of stock!'
+                });
+            }
+
+            product.stock -= 1;
+            product.sold += 1;
+            product.outOfStock = product.stock === 0;
+            await product.save();
+
+            return res.status(200).json({
+                success: true,
+                message: 'Product sold successfully!',
+                product
+            });
+
+        } else {
+            const deletedProduct = await Product.findByIdAndUpdate(
+                id,
+                { estado: false },
+                { new: true }
+            );
+
+            if (!deletedProduct) {
+                return res.status(404).json({
+                    success: false,
+                    message: 'Product not found!'
+                });
+            }
+
+            return res.status(200).json({
+                success: true,
+                message: 'Product deleted successfully!',
+                product: deletedProduct
+            });
+        }
+
     } catch (error) {
         res.status(500).json({
             success: false,
-            message: 'Error deleting product!',
-            error
-        })
+            message: 'Error processing the request!',
+            error: error.message
+        });
     }
-}
+};

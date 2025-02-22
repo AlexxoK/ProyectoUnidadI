@@ -9,20 +9,19 @@ const ProductSchema = Schema({
     name: {
         type: String,
         required: [true, "The name is required!"],
-        maxLenght: 25,
+        maxLength: 25,
     },
 
     description: {
         type: String,
-        required: [true, "Desription is required!"],
-        maxLenght: [500, "500 characters maximun!"],
+        required: [true, "Description is required!"],
+        maxLength: [500, "500 characters maximum!"],
     },
 
     price: {
         type: Number,
         required: [true, "Price is required!"],
-        minLenght: [2, "2 numbers minimun!"],
-        maxLenght: [5, "5 numbers maximun!"]
+        min: [0, "Price must be a positive number!"]
     },
 
     estado: {
@@ -32,8 +31,7 @@ const ProductSchema = Schema({
 },
     {
         timestamps: true,
-        versionkey: false
-    }
-);
+        versionKey: false
+    });
 
 export default model('Product', ProductSchema);

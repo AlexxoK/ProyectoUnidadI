@@ -60,4 +60,25 @@
     "$date": "2025-02-18T17:01:11.995Z"
   },
   "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67ba620e6938b5abcc1f41a3"
+  },
+  "name": "Juan",
+  "surname": "Orozco",
+  "username": "OrozcoK",
+  "email": "cortezk@gmail.com",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$NauRAIEF48wjrquwSlZsOQ$FpmgI+Am+D1vF/dItmgBT3Gd1Ty7NnZpO3fJEyxRHOU",
+  "phone": "12345678",
+  "role": "CLIENT_ROLE",
+  "estado": true,
+  "google": false,
+  "createdAt": {
+    "$date": "2025-02-22T23:47:26.355Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-23T19:21:23.236Z"
+  },
+  "__v": 0
 }]

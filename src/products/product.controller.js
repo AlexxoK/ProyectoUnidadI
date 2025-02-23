@@ -77,9 +77,36 @@ export const getProductById = async (req, res) => {
     }
 }
 
+export const getProductByName = async (req, res) => {
+    try {
+        const { name } = req.params;
+
+        const product = await Product.findOne({ name });
+
+        if (!product) {
+            return res.status(404).json({
+                success: false,
+                msg: 'Product not found!'
+            });
+        }
+
+        res.status(200).json({
+            success: true,
+            product
+        });
+
+    } catch (error) {
+        res.status(500).json({
+            success: false,
+            msg: 'Error getting product!',
+            error: error.message
+        });
+    }
+};
+
 export const updateProduct = async (req, res = response) => {
     try {
-        
+
         const { id } = req.params;
         const data = req.body;
 

@@ -1,7 +1,7 @@
 import { Router } from "express";
 import { check } from "express-validator";
-import { saveProduct, getProducts, getProductById, updateProduct, deleteProduct } from "./product.controller.js";
-import { existeProductById } from "../helpers/db-validator.js";
+import { saveProduct, getProducts, getProductById, getProductByName, updateProduct, deleteProduct } from "./product.controller.js";
+import { existeProductById, existeProductByName } from "../helpers/db-validator.js";
 import { validarCampos } from "../middlewares/validar-campos.js";
 import { validarJWT } from "../middlewares/validar-jwt.js";
 import { tieneRole } from "../middlewares/validar-roles.js";
@@ -22,7 +22,7 @@ router.post(
 router.get("/", getProducts);
 
 router.get(
-    "/findProduct/:id",
+    "/findProductById/:id",
     [
         validarJWT,
         tieneRole("ADMIN_ROLE"),
@@ -32,6 +32,18 @@ router.get(
     ],
     getProductById
 )
+
+router.get(
+    "/findProductByName/:name",
+    [
+        validarJWT,
+        tieneRole("ADMIN_ROLE", "CLIENT_ROLE"),
+        check("name", "Name is required!").notEmpty(),
+        check("name").custom(existeProductByName),
+        validarCampos
+    ],
+    getProductByName
+);
 
 router.put(
     "/:id",

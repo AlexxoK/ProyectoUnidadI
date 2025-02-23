@@ -11,8 +11,9 @@ import userRoutes from '../src/users/user.routes.js';
 import productRoutes from '../src/products/product.routes.js';
 import categoryRoutes from '../src/categories/category.routes.js';
 import facturaRoutes from '../src/facturas/factura.routes.js';
+import carRoutes from '../src/cars/car.routes.js';
 
-const middlewares = (app) =>{
+const middlewares = (app) => {
     app.use(express.urlencoded({ extended: false }));
     app.use(cors());
     app.use(express.json());
@@ -21,15 +22,16 @@ const middlewares = (app) =>{
     app.use(limiter);
 }
 
-const routes = (app) =>{
+const routes = (app) => {
     app.use("/gestorVentas/v1/auth", authRoutes);
     app.use("/gestorVentas/v1/users", userRoutes);
     app.use("/gestorVentas/v1/products", productRoutes);
     app.use("/gestorVentas/v1/categories", categoryRoutes);
     app.use("/gestorVentas/v1/facturas", facturaRoutes);
+    app.use("/gestorVentas/v1/cars", carRoutes);
 }
 
-const conectarDB = async () =>{
+const conectarDB = async () => {
     try {
         await dbConnection();
         console.log('Succesful connecting to database!')
@@ -39,7 +41,7 @@ const conectarDB = async () =>{
     }
 }
 
-export const initServer = async () =>{
+export const initServer = async () => {
     const app = express();
     const port = process.env.PORT || 3002;
 
@@ -48,7 +50,7 @@ export const initServer = async () =>{
         conectarDB();
         routes(app);
         app.listen(port);
-        console.log(`Server running on port ${port}!`);   
+        console.log(`Server running on port ${port}!`);
     } catch (err) {
         console.log(`Server init failed: ${err}!`);
     }

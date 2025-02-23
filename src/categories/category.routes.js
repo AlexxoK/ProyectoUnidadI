@@ -25,7 +25,7 @@ router.get(
     "/findCategory/:id",
     [
         validarJWT,
-        tieneRole("ADMIN_ROLE"),
+        tieneRole("ADMIN_ROLE", "CLIENT_ROLE"),
         check("id", "id invalid!").isMongoId(),
         check("id").custom(existeCategoryById),
         validarCampos

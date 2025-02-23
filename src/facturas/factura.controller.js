@@ -1,4 +1,4 @@
-import mongoose  from "mongoose";
+import mongoose from "mongoose";
 import Factura from "../facturas/factura.model.js";
 import Product from "../products/product.model.js";
 

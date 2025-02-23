@@ -58,9 +58,9 @@ export const getUserById = async (req, res) => {
 
 export const updateUser = async (req, res = response) => {
     try {
-        
+
         const { id } = req.params;
-        const { _id, password, email, ...data} = req.body;
+        const { _id, password, email, ...data } = req.body;
 
         if (password) {
             data.password = await hash(password)
@@ -85,7 +85,7 @@ export const updateUser = async (req, res = response) => {
 
 export const updatePassword = async (req, res = response) => {
     try {
-        
+
         const { id } = req.params;
         const { password } = req.body;
 
@@ -112,10 +112,10 @@ export const updatePassword = async (req, res = response) => {
 
 export const deleteUser = async (req, res) => {
     try {
-        
+
         const { id } = req.params;
 
-        const user = await User.findByIdAndUpdate(id, { estado: false}, {new: true});
+        const user = await User.findByIdAndUpdate(id, { estado: false }, { new: true });
 
         const authenticatedUser = req.user;
 
@@ -137,7 +137,7 @@ export const deleteUser = async (req, res) => {
 
 export const updateStatus = async (req, res = response) => {
     try {
-        
+
         const { id } = req.params;
         const { estado } = req.body;
 

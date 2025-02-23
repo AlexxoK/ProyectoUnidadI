@@ -73,4 +73,70 @@
   "updatedAt": {
     "$date": "2025-02-22T18:24:25.691Z"
   }
+},
+{
+  "_id": {
+    "$oid": "67bb670035fccb66f47a21bb"
+  },
+  "user": {
+    "$oid": "67ba620e6938b5abcc1f41a3"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "67b9d7ec03f7a5c05f8e6e78"
+      },
+      "quantity": 2,
+      "price": 10000,
+      "_id": {
+        "$oid": "67bb670035fccb66f47a21bc"
+      }
+    }
+  ],
+  "total": 20000,
+  "status": "Paid",
+  "createdAt": {
+    "$date": "2025-02-23T18:20:48.725Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-23T18:20:48.725Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67bb719a49166ef91054298d"
+  },
+  "user": {
+    "$oid": "67ba620e6938b5abcc1f41a3"
+  },
+  "products": [
+    {
+      "product": {
+        "$oid": "67b9d7ec03f7a5c05f8e6e78"
+      },
+      "quantity": 1,
+      "price": 10000,
+      "_id": {
+        "$oid": "67bb719a49166ef91054298e"
+      }
+    },
+    {
+      "product": {
+        "$oid": "67b9d83c03f7a5c05f8e6e80"
+      },
+      "quantity": 1,
+      "price": 30000,
+      "_id": {
+        "$oid": "67bb719a49166ef91054298f"
+      }
+    }
+  ],
+  "total": 40000,
+  "status": "Paid",
+  "createdAt": {
+    "$date": "2025-02-23T19:06:02.686Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-23T19:06:02.686Z"
+  }
 }]

@@ -10,7 +10,7 @@
 			"name": "admin",
 			"item": [
 				{
-					"name": "users",
+					"name": "account profile",
 					"item": [
 						{
 							"name": "register",
@@ -19,7 +19,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"name\": \"Luis\",\r\n  \"surname\": \"Monzon\",\r\n  \"username\": \"MonzonK\",\r\n  \"email\": \"monzonk@gmail.com\",\r\n  \"password\": \"monzonk027\",\r\n  \"phone\": \"12345678\"\r\n}",
+									"raw": "{\r\n  \"name\": \"Diego\",\r\n  \"surname\": \"Monterroso\",\r\n  \"username\": \"AlexxoK\",\r\n  \"email\": \"alexxok@gmail.com\",\r\n  \"password\": \"alexxok027\",\r\n  \"phone\": \"12345678\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -50,7 +50,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"email\": \"alexxok@gmail.com\",\r\n  \"password\": \"alexxok027\"\r\n}",
+									"raw": "{\r\n  \"email\": \"santosk@gmail.com\",\r\n  \"password\": \"santosk027\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -112,7 +112,13 @@
 							},
 							"request": {
 								"method": "GET",
-								"header": [],
+								"header": [
+									{
+										"key": "x-token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M4YmU4Y2VhZjExMGM1MThkZmQ0M2EiLCJpYXQiOjE3NDEyMTEwNjksImV4cCI6MTc0MTIxNDY2OX0.G7BALrNNfQiySfLHEUXS1HywsJj1KX0o6M_Kc5zMRmk",
+										"type": "text"
+									}
+								],
 								"body": {
 									"mode": "raw",
 									"raw": "",
@@ -123,7 +129,7 @@
 									}
 								},
 								"url": {
-									"raw": "http://localhost:3002/gestorVentas/v1/users/findUser/67b4baf4d075ae5f0ab3d11c",
+									"raw": "http://localhost:3002/gestorVentas/v1/users/findUser/67c8c1162de121a4d12145a2",
 									"protocol": "http",
 									"host": [
 										"localhost"
@@ -134,7 +140,7 @@
 										"v1",
 										"users",
 										"findUser",
-										"67b4baf4d075ae5f0ab3d11c"
+										"67c8c1162de121a4d12145a2"
 									]
 								}
 							},
@@ -144,10 +150,16 @@
 							"name": "putUser",
 							"request": {
 								"method": "PUT",
-								"header": [],
+								"header": [
+									{
+										"key": "x-token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M4YzVmODJkZTEyMWE0ZDEyMTQ1ZmIiLCJpYXQiOjE3NDEyMTE4MDUsImV4cCI6MTc0MTIxNTQwNX0.WiivznAMK-DfA23Hf5TRjutYAm5RQNaiPCKXXnG2L18",
+										"type": "text"
+									}
+								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"name\": \"Javier\",\n  \"surname\": \"Perez\",\n  \"username\": \"PerezK\",\n  \"email\": \"perezk@gmail.com\",\n  \"password\": \"perezk027\",\n  \"phone\": \"12345678\"\n}",
+									"raw": "{\n  \"name\": \"prueba\",\n  \"surname\": \"prueba\",\n  \"username\": \"pruebaK\",\n  \"email\": \"pruebak@gmail.com\",\n  \"password\": \"pruebak027\",\n  \"phone\": \"12345678\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -155,7 +167,7 @@
 									}
 								},
 								"url": {
-									"raw": "http://localhost:3002/gestorVentas/v1/users/67b4bbc4d075ae5f0ab3d12e",
+									"raw": "http://localhost:3002/gestorVentas/v1/users/67c8c5f82de121a4d12145fb",
 									"protocol": "http",
 									"host": [
 										"localhost"
@@ -165,7 +177,7 @@
 										"gestorVentas",
 										"v1",
 										"users",
-										"67b4bbc4d075ae5f0ab3d12e"
+										"67c8c5f82de121a4d12145fb"
 									]
 								}
 							},
@@ -252,11 +264,11 @@
 								"header": [
 									{
 										"key": "x-token",
-										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2I0YmI2M2QwNzVhZTVmMGFiM2QxMjciLCJpYXQiOjE3Mzk4OTc5NzgsImV4cCI6MTczOTkwMTU3OH0.ZAXmCHnNeU6DZuKRc61DLl9ANhbbEqQavKXU4v9Q_CI"
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M4Yzg1MDg0ZTMxNjliZjQzMzBjNDAiLCJpYXQiOjE3NDEyMTIwNjUsImV4cCI6MTc0MTIxNTY2NX0.CeMMC-CdHv_CsKyPIS25Rd-Rg675NqA8OPo7EenPG40"
 									}
 								],
 								"url": {
-									"raw": "http://localhost:3002/gestorVentas/v1/users/67b4bbc4d075ae5f0ab3d12e",
+									"raw": "http://localhost:3002/gestorVentas/v1/users/67c8c85084e3169bf4330c40",
 									"protocol": "http",
 									"host": [
 										"localhost"
@@ -266,7 +278,7 @@
 										"gestorVentas",
 										"v1",
 										"users",
-										"67b4bbc4d075ae5f0ab3d12e"
+										"67c8c85084e3169bf4330c40"
 									]
 								}
 							},
@@ -284,13 +296,13 @@
 								"header": [
 									{
 										"key": "x-token",
-										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2I0YmI2M2QwNzVhZTVmMGFiM2QxMjciLCJpYXQiOjE3NDAyMzI2NzAsImV4cCI6MTc0MDIzNjI3MH0.Q4hWPdvWSLXfvCVAXj0I00ng-lvRK86s79T9ETlEQT4",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M4YmU4Y2VhZjExMGM1MThkZmQ0M2EiLCJpYXQiOjE3NDEyMDkzMjcsImV4cCI6MTc0MTIxMjkyN30._ChdrF7FlVMfCpfMHtWGDgHVxDwliNdUZmeKbMPYSas",
 										"type": "text"
 									}
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"object\": \"Verdura\",\r\n  \"name\": \"Trigo\",\r\n  \"description\": \"Fuente de la vida.\",\r\n  \"price\": 5,\r\n  \"stock\": 50\r\n}",
+									"raw": "{\r\n  \"name\": \"Prueba\",\r\n  \"description\": \"Peluche de prueba\",\r\n  \"price\": 1,\r\n  \"stock\": 1\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -355,7 +367,7 @@
 								"header": [
 									{
 										"key": "x-token",
-										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2I0YmI2M2QwNzVhZTVmMGFiM2QxMjciLCJpYXQiOjE3NDAyNzI4MDIsImV4cCI6MTc0MDI3NjQwMn0.rbzWZvk9VYsSqmy7BfJYeFGLRTbGbrYXiepH7SqsHpg",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M4YmU4Y2VhZjExMGM1MThkZmQ0M2EiLCJpYXQiOjE3NDEyMDkzMjcsImV4cCI6MTc0MTIxMjkyN30._ChdrF7FlVMfCpfMHtWGDgHVxDwliNdUZmeKbMPYSas",
 										"type": "text"
 									}
 								],
@@ -369,7 +381,7 @@
 									}
 								},
 								"url": {
-									"raw": "http://localhost:3002/gestorVentas/v1/products/findProductById/67b9d83c03f7a5c05f8e6e80",
+									"raw": "http://localhost:3002/gestorVentas/v1/products/findProductById/67c8bf60eaf110c518dfd445",
 									"protocol": "http",
 									"host": [
 										"localhost"
@@ -380,7 +392,7 @@
 										"v1",
 										"products",
 										"findProductById",
-										"67b9d83c03f7a5c05f8e6e80"
+										"67c8bf60eaf110c518dfd445"
 									]
 								}
 							},
@@ -393,13 +405,13 @@
 								"header": [
 									{
 										"key": "x-token",
-										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2I0YmI2M2QwNzVhZTVmMGFiM2QxMjciLCJpYXQiOjE3NDAyMzI2NzAsImV4cCI6MTc0MDIzNjI3MH0.Q4hWPdvWSLXfvCVAXj0I00ng-lvRK86s79T9ETlEQT4",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M4YmU4Y2VhZjExMGM1MThkZmQ0M2EiLCJpYXQiOjE3NDEyMDkzMjcsImV4cCI6MTc0MTIxMjkyN30._ChdrF7FlVMfCpfMHtWGDgHVxDwliNdUZmeKbMPYSas",
 										"type": "text"
 									}
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"object\": \"Televisor\",\n  \"name\": \"Samsung\",\n  \"description\": \"Televisor de gama alta.\",\n  \"price\": 30000,\n  \"stock\": 50\n}",
+									"raw": "{\n  \"name\": \"HONOR Magic5 Lite 5G\",\n  \"description\": \"Celular de gama media.\",\n  \"price\": 1000,\n  \"stock\": 50\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -407,7 +419,7 @@
 									}
 								},
 								"url": {
-									"raw": "http://localhost:3002/gestorVentas/v1/products/67b9d83c03f7a5c05f8e6e80",
+									"raw": "http://localhost:3002/gestorVentas/v1/products/67c8bf60eaf110c518dfd445",
 									"protocol": "http",
 									"host": [
 										"localhost"
@@ -417,7 +429,7 @@
 										"gestorVentas",
 										"v1",
 										"products",
-										"67b9d83c03f7a5c05f8e6e80"
+										"67c8bf60eaf110c518dfd445"
 									]
 								}
 							},
@@ -430,11 +442,11 @@
 								"header": [
 									{
 										"key": "x-token",
-										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2I0YmI2M2QwNzVhZTVmMGFiM2QxMjciLCJpYXQiOjE3NDAyMzI2NzAsImV4cCI6MTc0MDIzNjI3MH0.Q4hWPdvWSLXfvCVAXj0I00ng-lvRK86s79T9ETlEQT4"
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M4YmU4Y2VhZjExMGM1MThkZmQ0M2EiLCJpYXQiOjE3NDEyMDk5MjQsImV4cCI6MTc0MTIxMzUyNH0.dV-Uo8hGROcKy9A59ziADiFxYVzGuB34NmaSo7noWIo"
 									}
 								],
 								"url": {
-									"raw": "http://localhost:3002/gestorVentas/v1/products/delete/67b9d83c03f7a5c05f8e6e80",
+									"raw": "http://localhost:3002/gestorVentas/v1/products/delete/67c8bf60eaf110c518dfd445",
 									"protocol": "http",
 									"host": [
 										"localhost"
@@ -445,7 +457,7 @@
 										"v1",
 										"products",
 										"delete",
-										"67b9d83c03f7a5c05f8e6e80"
+										"67c8bf60eaf110c518dfd445"
 									]
 								}
 							},
@@ -491,12 +503,12 @@
 								"header": [
 									{
 										"key": "x-token",
-										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2I0YmI2M2QwNzVhZTVmMGFiM2QxMjciLCJpYXQiOjE3NDAyMzI2NzAsImV4cCI6MTc0MDIzNjI3MH0.Q4hWPdvWSLXfvCVAXj0I00ng-lvRK86s79T9ETlEQT4"
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M4YmU4Y2VhZjExMGM1MThkZmQ0M2EiLCJpYXQiOjE3NDEyMDk5MjQsImV4cCI6MTc0MTIxMzUyNH0.dV-Uo8hGROcKy9A59ziADiFxYVzGuB34NmaSo7noWIo"
 									}
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"name\": \"Electrodomésticos\",\n  \"description\": \"Categoría para productos del hogar\",\n  \"productos\": [\"Licuadora\", \"Sartenes\"]\n}",
+									"raw": "{\n  \"name\": \"Personales\",\n  \"description\": \"Categoría para productos personales\",\n  \"productos\": [\"HONOR Magic5 Lite 5G\"]\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -558,12 +570,12 @@
 								"header": [
 									{
 										"key": "x-token",
-										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2I0YmI2M2QwNzVhZTVmMGFiM2QxMjciLCJpYXQiOjE3NDAyNDE0NDIsImV4cCI6MTc0MDI0NTA0Mn0.DCW_c15eMRIQxEPgOa7ZfANRoR6DinOu72RnteSYYW4",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M4YmU4Y2VhZjExMGM1MThkZmQ0M2EiLCJpYXQiOjE3NDEyMDk5MjQsImV4cCI6MTc0MTIxMzUyNH0.dV-Uo8hGROcKy9A59ziADiFxYVzGuB34NmaSo7noWIo",
 										"type": "text"
 									}
 								],
 								"url": {
-									"raw": "http://localhost:3002/gestorVentas/v1/categories/findCategory/67b9dba608494961918a9636",
+									"raw": "http://localhost:3002/gestorVentas/v1/categories/findCategory/67c8c3b52de121a4d12145bf",
 									"protocol": "http",
 									"host": [
 										"localhost"
@@ -574,7 +586,7 @@
 										"v1",
 										"categories",
 										"findCategory",
-										"67b9dba608494961918a9636"
+										"67c8c3b52de121a4d12145bf"
 									]
 								}
 							},
@@ -587,13 +599,13 @@
 								"header": [
 									{
 										"key": "x-token",
-										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2I0YmI2M2QwNzVhZTVmMGFiM2QxMjciLCJpYXQiOjE3NDAyMzI2NzAsImV4cCI6MTc0MDIzNjI3MH0.Q4hWPdvWSLXfvCVAXj0I00ng-lvRK86s79T9ETlEQT4",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M4YmU4Y2VhZjExMGM1MThkZmQ0M2EiLCJpYXQiOjE3NDEyMDk5MjQsImV4cCI6MTc0MTIxMzUyNH0.dV-Uo8hGROcKy9A59ziADiFxYVzGuB34NmaSo7noWIo",
 										"type": "text"
 									}
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"name\": \"Alimentos\",\r\n  \"description\": \"Categoría de productos alimenticios\",\r\n  \"productos\": [\"Trigo\", \"Manzana\"]\r\n}",
+									"raw": "{\r\n  \"name\": \"Personales\",\r\n  \"description\": \"Categoría de productos para el uso personal\",\r\n  \"productos\": [\"HONOR Magic5 Lite 5G\", \"Prueba\"]\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -601,7 +613,7 @@
 									}
 								},
 								"url": {
-									"raw": "http://localhost:3002/gestorVentas/v1/categories/67b9dc3408494961918a9645",
+									"raw": "http://localhost:3002/gestorVentas/v1/categories/67c8c3b52de121a4d12145bf",
 									"protocol": "http",
 									"host": [
 										"localhost"
@@ -611,7 +623,7 @@
 										"gestorVentas",
 										"v1",
 										"categories",
-										"67b9dc3408494961918a9645"
+										"67c8c3b52de121a4d12145bf"
 									]
 								}
 							},
@@ -624,12 +636,12 @@
 								"header": [
 									{
 										"key": "x-token",
-										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2I0YmI2M2QwNzVhZTVmMGFiM2QxMjciLCJpYXQiOjE3NDAyMzI2NzAsImV4cCI6MTc0MDIzNjI3MH0.Q4hWPdvWSLXfvCVAXj0I00ng-lvRK86s79T9ETlEQT4",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M4YmU4Y2VhZjExMGM1MThkZmQ0M2EiLCJpYXQiOjE3NDEyMDk5MjQsImV4cCI6MTc0MTIxMzUyNH0.dV-Uo8hGROcKy9A59ziADiFxYVzGuB34NmaSo7noWIo",
 										"type": "text"
 									}
 								],
 								"url": {
-									"raw": "http://localhost:3002/gestorVentas/v1/categories/67b9dca008494961918a9659",
+									"raw": "http://localhost:3002/gestorVentas/v1/categories/67c8c34f2de121a4d12145b3",
 									"protocol": "http",
 									"host": [
 										"localhost"
@@ -639,7 +651,7 @@
 										"gestorVentas",
 										"v1",
 										"categories",
-										"67b9dca008494961918a9659"
+										"67c8c34f2de121a4d12145b3"
 									]
 								}
 							},
@@ -650,43 +662,6 @@
 				{
 					"name": "facturas",
 					"item": [
-						{
-							"name": "saveFactura",
-							"request": {
-								"method": "POST",
-								"header": [
-									{
-										"key": "x-token",
-										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2I0YmI2M2QwNzVhZTVmMGFiM2QxMjciLCJpYXQiOjE3NDAyNDU2MDcsImV4cCI6MTc0MDI0OTIwN30._v__WljhSWdE7iKw6qD6ocTf-QkcrqRLKBqvJGQ5utY",
-										"type": "text"
-									}
-								],
-								"body": {
-									"mode": "raw",
-									"raw": "{\r\n  \"user\": \"67b4bb63d075ae5f0ab3d127\",\r\n  \"products\": [\r\n    {\r\n      \"product\": \"67b9d7ec03f7a5c05f8e6e78\",\r\n      \"quantity\": 1\r\n    },\r\n    {\r\n      \"product\": \"67b9d83c03f7a5c05f8e6e80\",\r\n      \"quantity\": 1\r\n    }\r\n  ]\r\n}\r\n",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": {
-									"raw": "http://localhost:3002/gestorVentas/v1/facturas/",
-									"protocol": "http",
-									"host": [
-										"localhost"
-									],
-									"port": "3002",
-									"path": [
-										"gestorVentas",
-										"v1",
-										"facturas",
-										""
-									]
-								}
-							},
-							"response": []
-						},
 						{
 							"name": "getFacturas",
 							"request": {
@@ -719,48 +694,19 @@
 							"response": []
 						},
 						{
-							"name": "getFacturaById",
-							"request": {
-								"method": "GET",
-								"header": [
-									{
-										"key": "x-token",
-										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2I0YmI2M2QwNzVhZTVmMGFiM2QxMjciLCJpYXQiOjE3NDAyNDU2MDcsImV4cCI6MTc0MDI0OTIwN30._v__WljhSWdE7iKw6qD6ocTf-QkcrqRLKBqvJGQ5utY",
-										"type": "text"
-									}
-								],
-								"url": {
-									"raw": "http://localhost:3002/gestorVentas/v1/facturas/findFactura/67ba10d6e9dbf6d2c82c49ac",
-									"protocol": "http",
-									"host": [
-										"localhost"
-									],
-									"port": "3002",
-									"path": [
-										"gestorVentas",
-										"v1",
-										"facturas",
-										"findFactura",
-										"67ba10d6e9dbf6d2c82c49ac"
-									]
-								}
-							},
-							"response": []
-						},
-						{
 							"name": "putFactura",
 							"request": {
 								"method": "PUT",
 								"header": [
 									{
 										"key": "x-token",
-										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2I0YmI2M2QwNzVhZTVmMGFiM2QxMjciLCJpYXQiOjE3NDAyNDU2MDcsImV4cCI6MTc0MDI0OTIwN30._v__WljhSWdE7iKw6qD6ocTf-QkcrqRLKBqvJGQ5utY",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M4YzlkZDY5MTZiYjMxNTliZjNjMTgiLCJpYXQiOjE3NDEyMTY0MTMsImV4cCI6MTc0MTIyMDAxM30.iD-CX31KGSi32uGiS81jWZZoXveCBiOWRUNqB9mo9Xc",
 										"type": "text"
 									}
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"products\": [\r\n    {\r\n      \"product\": \"67b9dcd008494961918a965f\",\r\n      \"quantity\": 1\r\n    },\r\n    {\r\n      \"product\": \"67b9d7ec03f7a5c05f8e6e78\",\r\n      \"quantity\": 1\r\n    }\r\n  ]\r\n}",
+									"raw": "{\r\n  \"products\": [\r\n    {\r\n      \"product\": \"67c8bf60eaf110c518dfd445\",\r\n      \"quantity\": 1\r\n    },\r\n    {\r\n      \"product\": \"67c8c3232de121a4d12145af\",\r\n      \"quantity\": 1\r\n    }\r\n  ]\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -768,7 +714,7 @@
 									}
 								},
 								"url": {
-									"raw": "http://localhost:3002/gestorVentas/v1/facturas/updateFactura/67ba12b0cf5280defb62bca5",
+									"raw": "http://localhost:3002/gestorVentas/v1/facturas/updateFactura/67c8d9b60249282dd2758712",
 									"protocol": "http",
 									"host": [
 										"localhost"
@@ -779,45 +725,7 @@
 										"v1",
 										"facturas",
 										"updateFactura",
-										"67ba12b0cf5280defb62bca5"
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "putEstadoFactura",
-							"request": {
-								"method": "PUT",
-								"header": [
-									{
-										"key": "x-token",
-										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2I0YmI2M2QwNzVhZTVmMGFiM2QxMjciLCJpYXQiOjE3NDAyNDU2MDcsImV4cCI6MTc0MDI0OTIwN30._v__WljhSWdE7iKw6qD6ocTf-QkcrqRLKBqvJGQ5utY",
-										"type": "text"
-									}
-								],
-								"body": {
-									"mode": "raw",
-									"raw": "{\r\n  \"status\": \"Paid\"\r\n}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": {
-									"raw": "http://localhost:3002/gestorVentas/v1/facturas/updateEstadoFactura/67ba161c12071eee98159410",
-									"protocol": "http",
-									"host": [
-										"localhost"
-									],
-									"port": "3002",
-									"path": [
-										"gestorVentas",
-										"v1",
-										"facturas",
-										"updateEstadoFactura",
-										"67ba161c12071eee98159410"
+										"67c8d9b60249282dd2758712"
 									]
 								}
 							},
@@ -831,7 +739,7 @@
 			"name": "usuarios",
 			"item": [
 				{
-					"name": "users",
+					"name": "account profile",
 					"item": [
 						{
 							"name": "register",
@@ -871,7 +779,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"email\": \"cortezk@gmail.com\",\r\n  \"password\": \"cortezk027\"\r\n}",
+									"raw": "{\r\n  \"email\": \"alexxok@gmail.com\",\r\n  \"password\": \"alexxok027\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1036,7 +944,7 @@
 								"header": [
 									{
 										"key": "x-token",
-										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JhNjIwZTY5MzhiNWFiY2MxZjQxYTMiLCJpYXQiOjE3NDAyNzMyOTcsImV4cCI6MTc0MDI3Njg5N30.hIedAsyKf-Ev5vlMqdboEsyehjNVHSJY8v9699BG3iM",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M4YzlkZDY5MTZiYjMxNTliZjNjMWIiLCJpYXQiOjE3NDEyMTQzNDcsImV4cCI6MTc0MTIxNzk0N30.sRLyExPtlnBBjPWy9BgDQ1Ekbkn4VXKoG9OJHcPDt5E",
 										"type": "text"
 									}
 								],
@@ -1050,7 +958,7 @@
 									}
 								},
 								"url": {
-									"raw": "http://localhost:3002/gestorVentas/v1/products/findProductByName/Licuadora",
+									"raw": "http://localhost:3002/gestorVentas/v1/products/findProductByName/Asus",
 									"protocol": "http",
 									"host": [
 										"localhost"
@@ -1061,7 +969,7 @@
 										"v1",
 										"products",
 										"findProductByName",
-										"Licuadora"
+										"Asus"
 									]
 								}
 							},
@@ -1104,18 +1012,18 @@
 							"response": []
 						},
 						{
-							"name": "getCategoryById",
+							"name": "getProductsByCategory",
 							"request": {
 								"method": "GET",
 								"header": [
 									{
 										"key": "x-token",
-										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JhNjIwZTY5MzhiNWFiY2MxZjQxYTMiLCJpYXQiOjE3NDAyNzMyOTcsImV4cCI6MTc0MDI3Njg5N30.hIedAsyKf-Ev5vlMqdboEsyehjNVHSJY8v9699BG3iM",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M4YzlkZDY5MTZiYjMxNTliZjNjMWIiLCJpYXQiOjE3NDEyMTQ3ODYsImV4cCI6MTc0MTIxODM4Nn0.6FsRq_EOaBZODHNUYS5heWGjpKKfZc7hxmePKhvbNpQ",
 										"type": "text"
 									}
 								],
 								"url": {
-									"raw": "http://localhost:3002/gestorVentas/v1/categories/findCategory/67b9dba608494961918a9636",
+									"raw": "http://localhost:3002/gestorVentas/v1/categories/findProductsByCategory/Electrónicos",
 									"protocol": "http",
 									"host": [
 										"localhost"
@@ -1125,8 +1033,8 @@
 										"gestorVentas",
 										"v1",
 										"categories",
-										"findCategory",
-										"67b9dba608494961918a9636"
+										"findProductsByCategory",
+										"Electrónicos"
 									]
 								}
 							},
@@ -1144,13 +1052,13 @@
 								"header": [
 									{
 										"key": "x-token",
-										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JhNjIwZTY5MzhiNWFiY2MxZjQxYTMiLCJpYXQiOjE3NDAzMzc0NDcsImV4cCI6MTc0MDM0MTA0N30.rP5GouJwdRWZzKuv35JevKTflOoV-jOftNkObDxQBD8",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M4YzlkZDY5MTZiYjMxNTliZjNjMWIiLCJpYXQiOjE3NDEyMTU0OTksImV4cCI6MTc0MTIxOTA5OX0.4HrDSo-xFsOHbyoN1yMFNzg16CXj9CuiVOYg0c0oo08",
 										"type": "text"
 									}
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"productId\": \"67b9d7ec03f7a5c05f8e6e78\",\r\n  \"quantity\": 5\r\n}",
+									"raw": "{\r\n  \"productId\": \"67c8bf12eaf110c518dfd442\",\r\n  \"quantity\": 5\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1181,7 +1089,7 @@
 								"header": [
 									{
 										"key": "x-token",
-										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JhNjIwZTY5MzhiNWFiY2MxZjQxYTMiLCJpYXQiOjE3NDAzMzc0NDcsImV4cCI6MTc0MDM0MTA0N30.rP5GouJwdRWZzKuv35JevKTflOoV-jOftNkObDxQBD8",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M4YzlkZDY5MTZiYjMxNTliZjNjMWIiLCJpYXQiOjE3NDEyMTU0OTksImV4cCI6MTc0MTIxOTA5OX0.4HrDSo-xFsOHbyoN1yMFNzg16CXj9CuiVOYg0c0oo08",
 										"type": "text"
 									}
 								],
@@ -1246,7 +1154,7 @@
 								"header": [
 									{
 										"key": "x-token",
-										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JhNjIwZTY5MzhiNWFiY2MxZjQxYTMiLCJpYXQiOjE3NDAzMzc0NDcsImV4cCI6MTc0MDM0MTA0N30.rP5GouJwdRWZzKuv35JevKTflOoV-jOftNkObDxQBD8",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M4YzlkZDY5MTZiYjMxNTliZjNjMWIiLCJpYXQiOjE3NDEyMTU0OTksImV4cCI6MTc0MTIxOTA5OX0.4HrDSo-xFsOHbyoN1yMFNzg16CXj9CuiVOYg0c0oo08",
 										"type": "text"
 									}
 								],
@@ -1274,7 +1182,7 @@
 								"header": [
 									{
 										"key": "x-token",
-										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JhNjIwZTY5MzhiNWFiY2MxZjQxYTMiLCJpYXQiOjE3NDAzMzc0NDcsImV4cCI6MTc0MDM0MTA0N30.rP5GouJwdRWZzKuv35JevKTflOoV-jOftNkObDxQBD8",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M4YzlkZDY5MTZiYjMxNTliZjNjMWIiLCJpYXQiOjE3NDEyMTU0OTksImV4cCI6MTc0MTIxOTA5OX0.4HrDSo-xFsOHbyoN1yMFNzg16CXj9CuiVOYg0c0oo08",
 										"type": "text"
 									}
 								],

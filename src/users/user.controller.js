@@ -1,6 +1,7 @@
 import { response, request } from "express";
-import { hash, verify } from "argon2";
+import { hash } from "argon2";
 import User from "./user.model.js";
+import { validarJWT } from '../middlewares/validar-jwt.js';
 
 export const getUsers = async (req = request, res = response) => {
     try {
@@ -56,84 +57,88 @@ export const getUserById = async (req, res) => {
     }
 }
 
-export const updateUser = async (req, res = response) => {
+export const updateUser = [validarJWT, async (req, res = response) => {
     try {
-
         const { id } = req.params;
         const { _id, password, email, ...data } = req.body;
 
+        if (req.usuario.id !== id) {
+            return res.status(403).json({ success: false, msg: 'Unauthorized' });
+        }
+
         if (password) {
-            data.password = await hash(password)
+            data.password = await hash(password);
         }
 
         const user = await User.findByIdAndUpdate(id, data, { new: true });
 
         res.status(200).json({
             success: true,
-            msg: 'User update!',
+            msg: 'User updated!',
             user
-        })
-
+        });
     } catch (error) {
         res.status(500).json({
             success: false,
-            msg: 'Error update!',
+            msg: 'Error updating user!',
             error
-        })
+        });
     }
-}
+}];
 
-export const updatePassword = async (req, res = response) => {
+export const updatePassword = [validarJWT, async (req, res = response) => {
     try {
-
         const { id } = req.params;
         const { password } = req.body;
 
-        if (password) {
-            data.password = await hash(password)
+        if (req.usuario.id !== id) {
+            return res.status(403).json({ success: false, msg: 'Unauthorized' });
         }
 
-        const user = await User.findByIdAndUpdate(id, { new: true });
+        if (!password) {
+            return res.status(400).json({ success: false, msg: 'Password is required' });
+        }
+
+        const hashedPassword = await hash(password);
+        const user = await User.findByIdAndUpdate(id, { password: hashedPassword }, { new: true });
 
         res.status(200).json({
             success: true,
-            msg: 'Password update!',
+            msg: 'Password updated!',
             user
-        })
-
+        });
     } catch (error) {
         res.status(500).json({
             success: false,
-            msg: 'Error update!',
+            msg: 'Error updating password!',
             error
-        })
+        });
     }
-}
+}];
 
-export const deleteUser = async (req, res) => {
+export const deleteUser = [validarJWT, async (req, res = response) => {
     try {
-
         const { id } = req.params;
+
+        if (req.usuario.id !== id) {
+            return res.status(403).json({ success: false, msg: 'Unauthorized' });
+        }
 
         const user = await User.findByIdAndUpdate(id, { estado: false }, { new: true });
 
-        const authenticatedUser = req.user;
-
         res.status(200).json({
             success: true,
-            msg: 'Deactivate user!',
-            user,
-            authenticatedUser
-        })
-
+            msg: 'User deactivated!',
+            user
+        });
     } catch (error) {
         res.status(500).json({
             success: false,
-            msg: 'Deactivate error!',
+            msg: 'Error deactivating user!',
             error
-        })
+        });
     }
-}
+}];
 
 export const updateStatus = async (req, res = response) => {
     try {

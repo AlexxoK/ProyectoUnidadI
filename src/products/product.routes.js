@@ -13,7 +13,6 @@ router.post(
     [
         validarJWT,
         tieneRole("ADMIN_ROLE"),
-        check("id", "id invalid!").isMongoId(),
         validarCampos
     ],
     saveProduct

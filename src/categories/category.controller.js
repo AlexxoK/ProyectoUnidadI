@@ -117,6 +117,40 @@ export const getCategoryById = async (req, res) => {
     }
 };
 
+export const getProductsByCategory = async (req, res) => {
+    const { name } = req.params;
+
+    try {
+        const category = await Category.findOne({ name: name }).populate('productos', 'name');
+
+        if (!category) {
+            return res.status(404).json({
+                success: false,
+                message: 'Category not found!'
+            });
+        }
+
+        const categoryData = {
+            ...category.toObject(),
+            productos: category.productos.length
+                ? category.productos.map(product => product.name)
+                : ['No products found in this category']
+        };
+
+        res.status(200).json({
+            success: true,
+            category: categoryData
+        });
+
+    } catch (error) {
+        res.status(500).json({
+            success: false,
+            message: 'Error searching category!',
+            error: error.message
+        });
+    }
+};
+
 export const updateCategory = async (req, res) => {
     try {
         const { id } = req.params;

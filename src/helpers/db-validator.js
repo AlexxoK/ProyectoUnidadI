@@ -52,6 +52,14 @@ export const existeCategoryById = async (id = '') => {
     }
 }
 
+export const existeCategoryByName = async (name = '') => {
+    const existeCategory = await Category.findById(name);
+
+    if (!existeCategory) {
+        throw new Error(`name ${name} dont exists!`);
+    }
+}
+
 export const existeFacturaById = async (id = '') => {
     const existeFactura = await Factura.findById(id);
 

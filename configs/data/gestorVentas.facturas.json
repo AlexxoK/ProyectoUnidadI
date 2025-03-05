@@ -1,142 +1,66 @@
 [{
   "_id": {
-    "$oid": "67ba161c12071eee98159410"
+    "$oid": "67c8d87c80d29d81199f584f"
   },
   "user": {
-    "$oid": "67b4bb63d075ae5f0ab3d127"
+    "$oid": "67c8c9dd6916bb3159bf3c1b"
   },
   "products": [
     {
       "product": {
-        "$oid": "67b9d7ec03f7a5c05f8e6e78"
+        "$oid": "67c8befeeaf110c518dfd43f"
       },
       "quantity": 5,
-      "price": 10000,
+      "price": 7000,
       "_id": {
-        "$oid": "67ba161c12071eee98159411"
-      }
-    },
-    {
-      "product": {
-        "$oid": "67b9d83c03f7a5c05f8e6e80"
-      },
-      "quantity": 5,
-      "price": 30000,
-      "_id": {
-        "$oid": "67ba161c12071eee98159412"
+        "$oid": "67c8d87c80d29d81199f5850"
       }
     }
   ],
-  "total": 200000,
+  "total": 35000,
   "status": "Paid",
   "createdAt": {
-    "$date": "2025-02-22T18:23:24.371Z"
+    "$date": "2025-03-05T23:04:28.043Z"
   },
   "updatedAt": {
-    "$date": "2025-02-22T18:24:10.883Z"
+    "$date": "2025-03-05T23:04:28.043Z"
   }
 },
 {
   "_id": {
-    "$oid": "67ba165912071eee9815942e"
+    "$oid": "67c8d9b60249282dd2758712"
   },
   "user": {
-    "$oid": "67b4bb63d075ae5f0ab3d127"
+    "$oid": "67c8c9dd6916bb3159bf3c1b"
   },
   "products": [
     {
       "product": {
-        "$oid": "67b9d7ec03f7a5c05f8e6e78"
+        "$oid": "67c8bf60eaf110c518dfd445"
       },
       "quantity": 1,
-      "price": 10000,
+      "price": 1000,
       "_id": {
-        "$oid": "67ba165912071eee9815942f"
+        "$oid": "67c8dad10249282dd275873a"
       }
     },
     {
       "product": {
-        "$oid": "67b9d83c03f7a5c05f8e6e80"
+        "$oid": "67c8c3232de121a4d12145af"
       },
       "quantity": 1,
-      "price": 30000,
+      "price": 100,
       "_id": {
-        "$oid": "67ba165912071eee98159430"
+        "$oid": "67c8dad10249282dd275873b"
       }
     }
   ],
-  "total": 40000,
-  "status": "Pending",
-  "createdAt": {
-    "$date": "2025-02-22T18:24:25.691Z"
-  },
-  "updatedAt": {
-    "$date": "2025-02-22T18:24:25.691Z"
-  }
-},
-{
-  "_id": {
-    "$oid": "67bb670035fccb66f47a21bb"
-  },
-  "user": {
-    "$oid": "67ba620e6938b5abcc1f41a3"
-  },
-  "products": [
-    {
-      "product": {
-        "$oid": "67b9d7ec03f7a5c05f8e6e78"
-      },
-      "quantity": 2,
-      "price": 10000,
-      "_id": {
-        "$oid": "67bb670035fccb66f47a21bc"
-      }
-    }
-  ],
-  "total": 20000,
+  "total": 1100,
   "status": "Paid",
   "createdAt": {
-    "$date": "2025-02-23T18:20:48.725Z"
+    "$date": "2025-03-05T23:09:42.150Z"
   },
   "updatedAt": {
-    "$date": "2025-02-23T18:20:48.725Z"
-  }
-},
-{
-  "_id": {
-    "$oid": "67bb719a49166ef91054298d"
-  },
-  "user": {
-    "$oid": "67ba620e6938b5abcc1f41a3"
-  },
-  "products": [
-    {
-      "product": {
-        "$oid": "67b9d7ec03f7a5c05f8e6e78"
-      },
-      "quantity": 1,
-      "price": 10000,
-      "_id": {
-        "$oid": "67bb719a49166ef91054298e"
-      }
-    },
-    {
-      "product": {
-        "$oid": "67b9d83c03f7a5c05f8e6e80"
-      },
-      "quantity": 1,
-      "price": 30000,
-      "_id": {
-        "$oid": "67bb719a49166ef91054298f"
-      }
-    }
-  ],
-  "total": 40000,
-  "status": "Paid",
-  "createdAt": {
-    "$date": "2025-02-23T19:06:02.686Z"
-  },
-  "updatedAt": {
-    "$date": "2025-02-23T19:06:02.686Z"
+    "$date": "2025-03-05T23:14:25.138Z"
   }
 }]

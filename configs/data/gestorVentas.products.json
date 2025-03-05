@@ -1,114 +1,90 @@
 [{
   "_id": {
-    "$oid": "67b9d7ec03f7a5c05f8e6e78"
+    "$oid": "67c8befeeaf110c518dfd43f"
   },
-  "object": "Teléfono",
-  "name": "iPhone16",
-  "description": "Teléfono de gama alta.",
-  "price": 10000,
-  "stock": 41,
-  "sold": 9,
+  "name": "Victus",
+  "description": "Computadora de alto rendimiento",
+  "price": 7000,
+  "stock": 25,
+  "sold": 5,
   "outOfStock": false,
   "estado": true,
   "createdAt": {
-    "$date": "2025-02-22T13:58:04.709Z"
+    "$date": "2025-03-05T21:15:42.452Z"
   },
   "updatedAt": {
-    "$date": "2025-02-23T19:06:02.689Z"
+    "$date": "2025-03-05T23:14:25.125Z"
   }
 },
 {
   "_id": {
-    "$oid": "67b9d83c03f7a5c05f8e6e80"
+    "$oid": "67c8bf12eaf110c518dfd442"
   },
-  "object": "Televisor",
-  "name": "Samsung",
-  "description": "Televisor de gama alta.",
-  "price": 30000,
-  "stock": 43,
-  "sold": 7,
-  "outOfStock": false,
-  "estado": true,
-  "createdAt": {
-    "$date": "2025-02-22T13:59:24.402Z"
-  },
-  "updatedAt": {
-    "$date": "2025-02-23T19:06:02.696Z"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b9dbe908494961918a963c"
-  },
-  "object": "Cocina",
-  "name": "Licuadora",
-  "description": "Licuadora para vatir alimentos.",
-  "price": 3000,
-  "stock": 50,
+  "name": "Asus",
+  "description": "Computadora de alto rendimiento",
+  "price": 7000,
+  "stock": 30,
   "sold": 0,
   "outOfStock": false,
   "estado": true,
   "createdAt": {
-    "$date": "2025-02-22T14:15:05.171Z"
+    "$date": "2025-03-05T21:16:02.067Z"
   },
   "updatedAt": {
-    "$date": "2025-02-22T14:15:05.171Z"
+    "$date": "2025-03-05T23:14:25.130Z"
   }
 },
 {
   "_id": {
-    "$oid": "67b9dc0608494961918a963f"
+    "$oid": "67c8bf60eaf110c518dfd445"
   },
-  "object": "Cocina",
-  "name": "Sartenes",
-  "description": "Juego de sartenes.",
+  "name": "HONOR Magic5 Lite 5G",
+  "description": "Celular de gama media.",
   "price": 1000,
-  "stock": 50,
-  "sold": 0,
+  "stock": 49,
+  "sold": 1,
   "outOfStock": false,
   "estado": true,
   "createdAt": {
-    "$date": "2025-02-22T14:15:34.124Z"
+    "$date": "2025-03-05T21:17:20.810Z"
   },
   "updatedAt": {
-    "$date": "2025-02-22T17:41:21.025Z"
+    "$date": "2025-03-05T23:14:25.132Z"
   }
 },
 {
   "_id": {
-    "$oid": "67b9dcd008494961918a965f"
+    "$oid": "67c8c3232de121a4d12145af"
   },
-  "object": "Fruta",
-  "name": "Manzana",
-  "description": "Fruta energética.",
-  "price": 5,
-  "stock": 50,
-  "sold": 0,
+  "name": "Peluche Cinnamoroll",
+  "description": "Peluche de la serie --Hello Kitty--",
+  "price": 100,
+  "stock": 29,
+  "sold": 1,
   "outOfStock": false,
   "estado": true,
   "createdAt": {
-    "$date": "2025-02-22T14:18:56.617Z"
+    "$date": "2025-03-05T21:33:23.786Z"
   },
   "updatedAt": {
-    "$date": "2025-02-22T18:20:29.247Z"
+    "$date": "2025-03-05T23:14:25.134Z"
   }
 },
 {
   "_id": {
-    "$oid": "67b9dce108494961918a9662"
+    "$oid": "67c8c4672de121a4d12145c9"
   },
-  "object": "Verdura",
-  "name": "Trigo",
-  "description": "Fuente de la vida.",
-  "price": 5,
-  "stock": 50,
+  "name": "Prueba",
+  "description": "Peluche de prueba",
+  "price": 1,
+  "stock": 1,
   "sold": 0,
   "outOfStock": false,
   "estado": true,
   "createdAt": {
-    "$date": "2025-02-22T14:19:13.429Z"
+    "$date": "2025-03-05T21:38:47.383Z"
   },
   "updatedAt": {
-    "$date": "2025-02-22T14:19:13.429Z"
+    "$date": "2025-03-05T21:38:47.383Z"
   }
 }]

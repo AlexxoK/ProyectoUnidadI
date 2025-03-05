@@ -1,88 +1,88 @@
 [{
   "_id": {
-    "$oid": "67b9dba608494961918a9636"
+    "$oid": "67c8c1902de121a4d12145ac"
   },
   "name": "Electrónicos",
-  "description": "Categoría para productos Electrónicos",
+  "description": "Categoría para productos dedicados al ámbito laboral o educativo",
   "productos": [
     {
-      "$oid": "67b9d7ec03f7a5c05f8e6e78"
+      "$oid": "67c8befeeaf110c518dfd43f"
     },
     {
-      "$oid": "67b9d83c03f7a5c05f8e6e80"
+      "$oid": "67c8bf12eaf110c518dfd442"
     }
   ],
   "status": true,
   "createdAt": {
-    "$date": "2025-02-22T14:13:58.626Z"
+    "$date": "2025-03-05T21:26:40.301Z"
   },
   "updatedAt": {
-    "$date": "2025-02-22T14:13:58.626Z"
+    "$date": "2025-03-05T21:26:40.301Z"
   }
 },
 {
   "_id": {
-    "$oid": "67b9dc3408494961918a9645"
+    "$oid": "67c8c34f2de121a4d12145b3"
   },
-  "name": "Alimentos",
-  "description": "Categoría de productos alimenticios",
+  "name": "Regalos",
+  "description": "Categoría para productos que se regalan",
   "productos": [
     {
-      "$oid": "67b9dcd008494961918a965f"
-    },
-    {
-      "$oid": "67b9dce108494961918a9662"
-    }
-  ],
-  "status": true,
-  "createdAt": {
-    "$date": "2025-02-22T14:16:20.464Z"
-  },
-  "updatedAt": {
-    "$date": "2025-02-22T14:19:33.910Z"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b9dca008494961918a9659"
-  },
-  "name": "Electrodomésticos",
-  "description": "Categoría para productos del hogar",
-  "productos": [
-    {
-      "$oid": "67b9dbe908494961918a963c"
-    },
-    {
-      "$oid": "67b9dc0608494961918a963f"
+      "$oid": "67c8c3232de121a4d12145af"
     }
   ],
   "status": false,
   "createdAt": {
-    "$date": "2025-02-22T14:18:08.774Z"
+    "$date": "2025-03-05T21:34:07.854Z"
   },
   "updatedAt": {
-    "$date": "2025-02-22T14:21:10.480Z"
+    "$date": "2025-03-05T21:41:07.792Z"
   }
 },
 {
   "_id": {
-    "$oid": "67b9dd5608494961918a9675"
+    "$oid": "67c8c3b52de121a4d12145bf"
+  },
+  "name": "Personales",
+  "description": "Categoría de productos para el uso personal",
+  "productos": [
+    {
+      "$oid": "67c8bf60eaf110c518dfd445"
+    },
+    {
+      "$oid": "67c8c4672de121a4d12145c9"
+    }
+  ],
+  "status": false,
+  "createdAt": {
+    "$date": "2025-03-05T21:35:49.397Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-05T21:40:43.731Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c8c4db2de121a4d12145de"
   },
   "name": "Sin Categoría",
   "description": "Categoría para productos sin clasificación",
   "productos": [
     {
-      "$oid": "67b9dbe908494961918a963c"
+      "$oid": "67c8bf60eaf110c518dfd445"
     },
     {
-      "$oid": "67b9dc0608494961918a963f"
+      "$oid": "67c8c4672de121a4d12145c9"
+    },
+    {
+      "$oid": "67c8c3232de121a4d12145af"
     }
   ],
   "status": true,
   "createdAt": {
-    "$date": "2025-02-22T14:21:10.475Z"
+    "$date": "2025-03-05T21:40:43.719Z"
   },
   "updatedAt": {
-    "$date": "2025-02-22T14:21:10.477Z"
+    "$date": "2025-03-05T21:41:07.787Z"
   }
 }]
